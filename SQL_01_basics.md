@@ -1,3 +1,4 @@
+
 # SQL Basics
 
 Basic syntax of SQL queries:
@@ -27,6 +28,7 @@ WHERE var1 < (SELECT var1 FROM table WHERE var2 = value2);
 `SELECT CONCAT(var1, '%')`: Concatenating text together  
 
 <br>
+
 ## Where clauses
 
 `WHERE var1 = value1`:  Comparison versus one value with =, <, <=, >, >= , <>  
@@ -40,8 +42,8 @@ Conditions:
 AND, OR, XOR (exclusive or)
 
 <br>
-## Ordering results
 
+## Ordering results
 Add an **ORDER BY var DESC** clause to show the result ordered in descending order.
 
 The <var IN ('option1', 'option2')> clause returns 0-1 so it can be used for other purposes, for instance to arrange some subjects as last.
