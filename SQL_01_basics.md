@@ -20,14 +20,19 @@ WHERE var1 < (SELECT var1 FROM table WHERE var2 = value2);
 
 ## Select clauses
 `SELECT *`: Select everything.  
-`SELECT COUNT(*)`: Return the number of values  
 `SELECT DISTINCT var1`: Return the distinctive values  
 `SELECT ROUND(var1, -3)`: Round the var1 to the nearest 1000 unit  
 `SELECT var1/1000`: You can do immediate calculations inside SELECT  
 `SELECT CONCAT(var1, '%')`: Concatenating text together  
 
 Aggregates:
-`SELECT SUM(var)`: returns sum
+`SELECT SUM(var)`: returns sum  
+`SELECT AVG(var)`: returns average  
+`SELECT MAX(var)`: returns maximum, similarly there is `MIN`   
+`SELECT COUNT(var)`: Return the number of values    
+
+Renaming
+`SELECT var1/var2 AS var3`  
 
 <br>
 
