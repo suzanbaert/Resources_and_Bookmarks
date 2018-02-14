@@ -31,7 +31,7 @@ Aggregates:
 `SELECT MAX(var)`: returns maximum, similarly there is `MIN`   
 `SELECT COUNT(var)`: Return the number of values    
 
-Renaming
+Renaming:  
 `SELECT var1/var2 AS var3`  
 
 <br>
