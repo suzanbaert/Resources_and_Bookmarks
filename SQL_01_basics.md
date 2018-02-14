@@ -41,7 +41,7 @@ Renaming:
 `WHERE var1 = value1`:  Comparison versus one value with =, <, <=, >, >= , <>  
 `WHERE var1 BETWEEN value1 and value2`  
 `WHERE var1 LIKE 'A%'`:  All starting with A  
-`WHERE var1 IN ('value1', 'value2')`: Will show all values that are either value1 or value 2 
+`WHERE var1 IN ('value1', 'value2')`: Will show all values that are either value1 or value 2  
 `WHERE var1 NOT IN ('value1', 'value2')`: Will show all values that are neither value1 nor value 2  
 `WHERE LEFT(var1, 1) = LEFT(var2, 1)`: All where the first letter of var1 and var2 are identical  
 
