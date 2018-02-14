@@ -25,7 +25,7 @@ WHERE var1 < (SELECT var1 FROM table WHERE var2 = value2);
 `SELECT var1/1000`: You can do immediate calculations inside SELECT  
 `SELECT CONCAT(var1, '%')`: Concatenating text together  
 
-Aggregates:
+Aggregates:  
 `SELECT SUM(var)`: returns sum  
 `SELECT AVG(var)`: returns average  
 `SELECT MAX(var)`: returns maximum, similarly there is `MIN`   
