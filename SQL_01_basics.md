@@ -1,4 +1,3 @@
-
 # SQL Basics
 
 Basic syntax of SQL queries:
@@ -27,6 +26,9 @@ WHERE var1 < (SELECT var1 FROM table WHERE var2 = value2);
 `SELECT var1/1000`: You can do immediate calculations inside SELECT  
 `SELECT CONCAT(var1, '%')`: Concatenating text together  
 
+Aggregates:
+`SELECT SUM(var)`: returns sum
+
 <br>
 
 ## Where clauses
@@ -43,8 +45,17 @@ AND, OR, XOR (exclusive or)
 
 <br>
 
+
+## Grouping
+Adding `GROUP BY(var)` causes other functions as SUM and COUNT to applied over the groups. It will return a row per group.
+A `HAVING` will filter the groups displayed. WHERE clause filters rows before the aggregation, the HAVING clause filters after the aggregation. 
+
+
+
+<br>
+
 ## Ordering results
-Add an **ORDER BY var DESC** clause to show the result ordered in descending order.
+Addding **ORDER BY var DESC** clause to show the result ordered in descending order.
 
 The <var IN ('option1', 'option2')> clause returns 0-1 so it can be used for other purposes, for instance to arrange some subjects as last.
 Sample code will show nobel price winners in 1984 with Physisc and Chemistry last.
@@ -111,3 +122,23 @@ FROM world x
 WHERE 50000 < ALL (SELECT population FROM world y 
                    WHERE x.region=y.region AND y.population>0);
 ```
+
+Give the number of countries per continent with a population greater than 10000000
+```SQL
+SELECT continent, COUNT(name)
+FROM world
+WHERE population >= 10000000
+GROUP BY continent;
+```
+List the continents that have a total population of at least 100 million. 
+```SQL
+SELECT continent
+FROM world
+GROUP BY continent
+HAVING SUM(population) >= 100000000;
+```
+
+
+## Acknowledgements
+
++ [SQL Zoo](http://sqlzoo.net)
