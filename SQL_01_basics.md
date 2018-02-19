@@ -34,6 +34,9 @@ Aggregates:
 Renaming:  
 `SELECT var1/var2 AS var3`  
 
+Limiting:  
+`SELECT TOP *`: selects the first   
+Alternative in some SQL dialects: `ELECT * FROM tb LIMIT ;`  
 <br>
 
 ## Where clauses
