@@ -55,8 +55,21 @@ AND, OR, XOR (exclusive or)
 
 
 ## Grouping
-Adding `GROUP BY(var)` causes other functions as SUM and COUNT to applied over the groups. It will return a row per group.
-A `HAVING` will filter the groups displayed. WHERE clause filters rows before the aggregation, the HAVING clause filters after the aggregation. 
+Adding `GROUP BY(var)` causes other functions as SUM and COUNT to applied over the groups. It will return a row per group.  
+A `HAVING` will filter the groups displayed. WHERE clause filters rows before the aggregation, the HAVING clause filters after the aggregation.  
+  
+Case when:  
+Allows to factor/rename elements.  
+If no ELSE statement, it will return NULL for anything not yet captured by the above conditions. 
+
+```
+SELECT col1, 
+  CASE WHEN condition1 THEN value1 
+       WHEN condition2 THEN value2  
+       ELSE def_value 
+  END 
+FROM table1;
+```
 
 
 
@@ -65,7 +78,7 @@ A `HAVING` will filter the groups displayed. WHERE clause filters rows before th
 ## Ordering results
 Addding **ORDER BY var DESC** clause to show the result ordered in descending order.
 
-The <var IN ('option1', 'option2')> clause returns 0-1 so it can be used for other purposes, for instance to arrange some subjects as last.
+The <var IN ('option1', 'option2')> clause returns 0-1 so it can be used for other purposes, for instance to arrange some subjects as last.  
 Sample code will show nobel price winners in 1984 with Physisc and Chemistry last.
 ```SQL
 SELECT winner, subject
@@ -78,6 +91,16 @@ ORDER BY subject IN ('Physics','Chemistry'), subject, winner;
 ## Other functions
 `LENGTH(var)`: number of characters in a variable
 
+
+
+## Joins
+
+General syntax:
+```
+SELECT *
+FROM table1 
+JOIN table2 ON table1.id = table2.id;
+```
 
 
 
