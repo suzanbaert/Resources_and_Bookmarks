@@ -9,6 +9,8 @@ With this page I intend to keep track of some useful tutorials or blogposts.
 
 + [The ggplot extension gallery](http://www.ggplot2-exts.org/gallery/)
 
++ [Fixing the bar chart issue when no data is present](https://twitter.com/hadleywickham/status/954339479111786496) - Hadley's answer to me. Requires the latest dev version of ggplot2.
+
 
 
 <br>
