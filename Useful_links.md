@@ -34,3 +34,6 @@ With this page I intend to keep track of some useful tutorials or blogposts.
 
 <br>
 
+## Miscelaneous
+
++ [Making GIFs in R to add to a blog](https://blogdown-demo.rbind.io/2018/01/31/gif-animations/)
