@@ -28,6 +28,8 @@ With this page I intend to keep track of some useful tutorials or blogposts.
 
 ## Purrr
 
++ [Purrr tutorial by Charlotte Wickham](https://github.com/cwickham/purrr-tutorial)
+
 + [Crazy thing called purrr](http://colinfay.me/purrr-web-mining/) - first one in a series of six
 
 + [Introduction to purrr](https://emoriebeck.github.io/R-tutorials/purrr/)
