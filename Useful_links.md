@@ -13,9 +13,22 @@ With this page I intend to keep track of some useful tutorials or blogposts.
 
 <br>
 
+## Dplyr advanced
+
++ [Dplyr Data Wrangling Part 1: Basic to Advanced Ways to Select Columns](https://suzan.rbind.io/2018/01/dplyr-tutorial-1/) - including `select_if()`, `contains()` and `everything()`. 
+
++ [Dplyr Data Wrangling Part 2: Mutatin your columns into the right shape](https://suzan.rbind.io/2018/02/dplyr-tutorial-2/) - including `mutate_all()`, `mutate_if()` and `case_when()`.
+
++ [Programming with dplyr](http://dplyr.tidyverse.org/articles/programming.html) - including the `!!` bang bang operator
+
+
+<br>
+
 ## Purrr
 
 + [Crazy thing called purrr](http://colinfay.me/purrr-web-mining/) - first one in a series of six
 
 + [Introduction to purrr](https://emoriebeck.github.io/R-tutorials/purrr/)
+
+<br>
 
