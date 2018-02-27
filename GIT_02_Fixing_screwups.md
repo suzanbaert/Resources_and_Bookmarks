@@ -1,10 +1,10 @@
 # Part 2: Fixing your screw-ups
 
-Optional useful commands
+Optional useful commands  
 `$ git log`: shows all latest logs  
 `$ git reflog`  
 
-Exiting the merge or commit message window: `ESC` + `:wq`
+`ESC` + `:wq` : exiting the merge or commit message window
 
 
 <br>
@@ -27,14 +27,15 @@ $ git reset
 `$ git reset paste_haschode_here`: Default setting. Reset to specified commit, changes are in the working directory rather than the staging area  
 `$ git reset –hard paste_haschode_here`: Really don’t want the changes made, I want to go back to where we were before. All files will match the state they were at the previous commit. Clears staging area and working directory on tracked files.  
 
+<br>
 
-
-### I commited on the wrong branch 
+## I commited on master instead of my branch 
 
 ```
 #find the previous hashcode
 $ git log 
 
+#checkout the branch it should be commited on
 $ git checkout BranchName
 
 #cherry-pick commit from master to branch
