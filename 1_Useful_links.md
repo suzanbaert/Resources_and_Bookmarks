@@ -53,6 +53,18 @@ With this page I intend to keep track of some useful tutorials or blogposts.
 
 + [Maelle Salmon's how To make good packages](http://www.masalmon.eu/2017/12/11/goodrpackages/)
 
++ [R packages - Book by Hadley Wickham](http://r-pkgs.had.co.nz/)
+
+
+
+
+<br>
+
+## Tidy Eval
+
++ [Tidy eval in 5 minutes](https://www.youtube.com/watch?v=nERXS3ssntw)
+
++ [Tidy Eval in Advanced R Book](https://adv-r.hadley.nz/meta.html) - Chapters 18-21
 
 
 <br>

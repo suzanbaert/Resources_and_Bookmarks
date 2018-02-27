@@ -8,6 +8,12 @@ With this repo, I inten to store my summaries of courses taken, and to bookmark 
 + [My list of interesting bookmarks](Useful_links.md)
 
 
+
+
 ## Summaries of courses taken
 
 + [SQL notes](SQL_01_basics.md)
+
++ [GIT notes Part 1 - Getting the basics](GIT_01_Basics.md)
+
++ [GIT notes Part 2 - Fixing when things go wrong](GIT_02_Fixing_screwups.md)
