@@ -1,6 +1,7 @@
 # Basic info on this repo
 
-With this repo, I inten to store my summaries of courses taken, and to bookmark some tutorials and blog posts I found of others.
+This repo exists for me to store my bookmarks of tutorials/blog posts and my coursenotes. 
+With this repo, I intent to store my summaries of courses taken, and to bookmark some tutorials and blog posts I found of others.
 
 
 ## Interesting bookmarks
