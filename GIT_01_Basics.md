@@ -33,6 +33,8 @@ Browse to the right root folder and type in Bash:
 $ git clone TheGithubLink
 ```
 
+<br><br>
+<hr>
 <br>
 
 ## Basic GIT workflow
@@ -65,9 +67,10 @@ The above code adds every change to the staging area. You can specify filenames,
 + `git add -u` stages all modified and deleted files, but does not stage any new (and therefore untracked) files  
 + `git add -A` stages all new, modified and deleted  
 
-
 If you want to remove untracked files/folders: `git clean -df`
 
+<br><br>
+<hr>
 <br>
 
 ## Working with branches

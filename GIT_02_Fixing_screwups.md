@@ -7,6 +7,7 @@ Optional useful commands
 Exiting the merge or commit message window: `ESC` + `:wq`
 
 
+<br>
 
 ### Undo the changes made on an R file (not staged yet!) and return the previous version
 $ git checkout filename.R
