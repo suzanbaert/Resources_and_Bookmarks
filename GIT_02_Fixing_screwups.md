@@ -2,7 +2,9 @@
 
 Optional useful commands
 `$ git log`: shows all latest logs  
-`$ git reflog`
+`$ git reflog`  
+
+Exiting the merge or commit message window: `ESC` + `:wq`
 
 
 

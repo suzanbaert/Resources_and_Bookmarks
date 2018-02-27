@@ -57,13 +57,13 @@ $ git commit -m "enter your commit message"
 $ git push origin master
 ```
 
-The above code adds every change to the staging area. You can specify filenames, filetypes, folders etc...
-`git add filename.ext` will only stage the specific file  
-`git add *.R` will stage all .R files  
-`git add data/` will add the data folder  
-`git add .` stages all new and modified files, but does remove any deleted files  
-`git add -u` stages all modified and deleted files, but does not stage any new (and therefore untracked) files  
-`git add -A` stages all new, modified and deleted  
+The above code adds every change to the staging area. You can specify filenames, filetypes, folders etc...  
++ `git add filename.ext` will only stage the specific file  
++ `git add *.R` will stage all .R files  
++ `git add data/` will add the data folder  
++ `git add .` stages all new and modified files, but does remove any deleted files  
++ `git add -u` stages all modified and deleted files, but does not stage any new (and therefore untracked) files  
++ `git add -A` stages all new, modified and deleted  
 
 
 If you want to remove untracked files/folders: `git clean -df`
