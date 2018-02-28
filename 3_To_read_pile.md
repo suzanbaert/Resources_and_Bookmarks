@@ -3,6 +3,8 @@
 
 
 
+
+
 ## Tidy Eval
 
 
@@ -22,6 +24,8 @@
 
 + [Be smarter with your business intelligence (SQL)](https://page.data.world/be-smarter-with-your-business-intelligence)
 
++ [Purrr](https://towardsdatascience.com/functional-programming-in-r-with-purrr-469e597d0229)
+
 
 
 
@@ -30,6 +34,8 @@
 ## Blog posts
 
 + [Understanding world happiness and two other METIS projects](http://emilygeller.info/)
+
++ [Tidyverse billboard](http://www.njtierney.com/post/2017/11/07/tidyverse-billboard/)
 
 
 
@@ -49,3 +55,14 @@
 + [The 5 clustering algorithms we apparently need to know](https://towardsdatascience.com/the-5-clustering-algorithms-data-scientists-need-to-know-a36d136ef68)
 
 + [Principal components andalysis - Julia Silge's Rstudio slides](https://speakerdeck.com/juliasilge/understanding-principal-component-analysis-using-stack-overflow-data)
+
+
+
+<br>
+
+
+Others
+
++ [Series on portfolios](https://www.dataquest.io/blog/how-to-share-data-science-portfolio/)
+
++ [Github series for data scientists](https://github.com/blog/2494-github-for-data-scientists-a-webcast-series)
