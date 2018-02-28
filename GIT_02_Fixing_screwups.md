@@ -29,11 +29,11 @@ $ git reset
 
 <br>
 
-## I commited on master instead of my branch 
+## I commited on master instead of my branch
 
 ```
 #find the previous hashcode
-$ git log 
+$ git log
 
 #checkout the branch it should be commited on
 $ git checkout BranchName
@@ -46,7 +46,7 @@ $ git log
 
 #deleting the commit on the master branch
 $ git checkout master
-$ git reset 
+$ git reset
 ```
 
 
@@ -54,5 +54,5 @@ $ git reset
 
 ## Miscellaneous:
 
-Resetting to 300 minutes ago: 
+Resetting to 300 minutes ago:
 `$ git reset --hard master@{"300 minutes ago"}` [(Source)](https://twitter.com/data_stephanie/status/968226587547258886)

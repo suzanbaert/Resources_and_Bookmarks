@@ -1,5 +1,6 @@
 # SQL Basics
 
+
 Basic syntax of SQL queries:
 
 ```SQL
@@ -14,6 +15,14 @@ SELECT var1, var2, var3
 FROM table
 WHERE var1 < (SELECT var1 FROM table WHERE var2 = value2);
 ```
+
+<br>
+
+## Understanding the database
+
+(MySQl)
+`SHOW tables;`: gives you all table names in a database
+`DESCRIBE tablename;`: shows table info
 
 
 <br>
@@ -57,17 +66,17 @@ AND, OR, XOR (exclusive or)
 ## Grouping
 Adding `GROUP BY(var)` causes other functions as SUM and COUNT to applied over the groups. It will return a row per group.  
 A `HAVING` will filter the groups displayed. WHERE clause filters rows before the aggregation, the HAVING clause filters after the aggregation.  
-  
+
 Case when:  
 Allows to factor/rename elements.  
-If no ELSE statement, it will return NULL for anything not yet captured by the above conditions. 
+If no ELSE statement, it will return NULL for anything not yet captured by the above conditions.
 
 ```
-SELECT col1, 
-  CASE WHEN condition1 THEN value1 
+SELECT col1,
+  CASE WHEN condition1 THEN value1
        WHEN condition2 THEN value2  
-       ELSE def_value 
-  END 
+       ELSE def_value
+  END
 FROM table1;
 ```
 
@@ -95,14 +104,22 @@ ORDER BY subject IN ('Physics','Chemistry'), subject, winner;
 
 ## Joins
 
++ `INNER JOIN` :  return rows that have a match in both tables  
++ `FULL JOIN` : return all rows combined (regardless of whether it has a match)  
++ `LEFT JOIN` : will return first table with added info from second  
++ `RIGHT JOIN` : will return second table with added info from the first  
+
+There is no SQL function for ANTI JOIN
+
+
 General syntax:
 ```
 SELECT *
-FROM table1 
+FROM table1
 JOIN table2 ON table1.id = table2.id;
 ```
 
-
+<br><hr><br>
 
 
 ## Examples:
@@ -110,7 +127,7 @@ All details of Literature Nobel price winners in the eighties:
 ```SQL
 SELECT *
 FROM nobel
-WHERE subject = 'Literature' 
+WHERE subject = 'Literature'
 AND yr BETWEEN 1980 AND 1989;
 ```
 
@@ -138,19 +155,19 @@ WHERE population >= ALL(SELECT population FROM world
 ```
 
 
-Find the largest country (by area) in each continent, show the continent, the name and the area: 
+Find the largest country (by area) in each continent, show the continent, the name and the area:
 ```SQL
-SELECT continent, name, area 
+SELECT continent, name, area
 FROM world AS x
 WHERE area >= ALL (SELECT area FROM world AS y
                    WHERE y.continent=x.continent AND area>0);
 ```
 
-Select the code that shows the countries belonging to regions with all populations over 50000 
+Select the code that shows the countries belonging to regions with all populations over 50000
 ```SQL
-SELECT name, region, population 
-FROM world x 
-WHERE 50000 < ALL (SELECT population FROM world y 
+SELECT name, region, population
+FROM world x
+WHERE 50000 < ALL (SELECT population FROM world y
                    WHERE x.region=y.region AND y.population>0);
 ```
 
@@ -161,7 +178,7 @@ FROM world
 WHERE population >= 10000000
 GROUP BY continent;
 ```
-List the continents that have a total population of at least 100 million. 
+List the continents that have a total population of at least 100 million.
 ```SQL
 SELECT continent
 FROM world

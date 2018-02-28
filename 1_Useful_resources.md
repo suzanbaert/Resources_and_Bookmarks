@@ -13,7 +13,7 @@ With this page I intend to keep track of some useful tutorials or blogposts.
 
 ## Plots
 
-+ [Beautiful highlight plots](https://yutani.rbind.io/post/2017-10-06-gghighlight/?utm_content=buffereec33&utm_medium=social&utm_source=twitter.com&utm_campaign=buffer)
++ [Beautiful highlight plots](https://yutani.rbind.io/post/2017-10-06-gghighlight/)
 
 + [The ggplot extension gallery](http://www.ggplot2-exts.org/gallery/)
 
@@ -25,9 +25,11 @@ With this page I intend to keep track of some useful tutorials or blogposts.
 
 ## Dplyr advanced
 
-+ [Dplyr Data Wrangling Part 1: Basic to Advanced Ways to Select Columns](https://suzan.rbind.io/2018/01/dplyr-tutorial-1/) - including `select_if()`, `contains()` and `everything()`. 
++ [Dplyr Data Wrangling Part 1: Basic to Advanced Ways to Select Columns](https://suzan.rbind.io/2018/01/dplyr-tutorial-1/) - including `select_if()`, `contains()` and `everything()`.
 
 + [Dplyr Data Wrangling Part 2: Mutating your columns into the right shape](https://suzan.rbind.io/2018/02/dplyr-tutorial-2/) - including `mutate_all()`, `mutate_if()` and `case_when()`.
+
++ Dplyr Data Wrangling Part 3: Basic and more advanced ways to filter rows](https://suzan.rbind.io/2018/02/dplyr-tutorial-3/) - including `near()`, `filter_all()` and `filter_if()`.
 
 + [Programming with dplyr](http://dplyr.tidyverse.org/articles/programming.html) - including the `!!` bang bang operator
 
@@ -49,7 +51,7 @@ With this page I intend to keep track of some useful tutorials or blogposts.
 
 <br>
 
-## Packages
+## On making packages
 
 + [Maelle Salmon's how To make good packages](http://www.masalmon.eu/2017/12/11/goodrpackages/)
 
@@ -73,6 +75,9 @@ With this page I intend to keep track of some useful tutorials or blogposts.
 
 + [Making GIFs in R to add to a blog](https://blogdown-demo.rbind.io/2018/01/31/gif-animations/)
 
++ [Gorgeous colour palette](https://github.com/jkaupp/nord)
+
+![nord/man/figures/README-palettes-1.png ]
 
 
 
@@ -83,4 +88,3 @@ With this page I intend to keep track of some useful tutorials or blogposts.
 ### Data.world
 
 + [Importing data from anywhere on data.world](https://meta.data.world/many-ways-to-import-your-data-82c0e4d6de3d)
-
