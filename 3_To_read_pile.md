@@ -7,6 +7,8 @@
 
 ## Tidy Eval
 
++ [Programming with dplyr](http://dplyr.tidyverse.org/articles/programming.html)
+
 
 
 
@@ -46,6 +48,8 @@
 
 + [Functions from my personal package](http://www.dandersondata.com/post/sharing-some-functions-from-my-personal-r-package/)
 
++ [Internal packages for common data manipulations](http://jonthegeek.com/2018/02/19/internal-packages-for-common-data-manipulations/)
+
 
 
 <br>
@@ -55,6 +59,8 @@
 + [The 5 clustering algorithms we apparently need to know](https://towardsdatascience.com/the-5-clustering-algorithms-data-scientists-need-to-know-a36d136ef68)
 
 + [Principal components andalysis - Julia Silge's Rstudio slides](https://speakerdeck.com/juliasilge/understanding-principal-component-analysis-using-stack-overflow-data)
+
++ [Blogpost on the PCA analysis of stack overflow](https://stackoverflow.blog/2018/02/28/evaluating-options-amazons-hq2-using-stack-overflow-data/?utm_content=buffer5384c&utm_medium=social&utm_source=twitter.com&utm_campaign=buffer)
 
 
 
