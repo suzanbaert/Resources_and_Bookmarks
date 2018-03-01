@@ -104,13 +104,13 @@ ORDER BY subject IN ('Physics','Chemistry'), subject, winner;
 
 ## Joins
 
+**Additive joins**
 + `INNER JOIN` :  return rows that have a match in both tables  
 + `FULL JOIN` : return all rows combined (regardless of whether it has a match)  
 + `LEFT JOIN` : will return first table with added info from second  
-+ `RIGHT JOIN` : will return second table with added info from the first  
-
-There is no SQL function for ANTI JOIN
-
++ `RIGHT JOIN` : will return second table with added info from the first
++ `CROSS JOIN` : all possible combinations of 1 and 2
++ `SELF JOIN`
 
 General syntax:
 ```
@@ -118,6 +118,41 @@ SELECT *
 FROM table1
 JOIN table2 ON table1.id = table2.id;
 ```
+
+If the id column is the same in both tables it can be shorter: `JOIN table2 USING id`.
+Sometimes useful to add aliases after the tables.
+
+**Filtering joins**
+There is no SQL function for anti join or semi join.  
+If needed, need to do via subquery:
+
+```
+SELECT *
+FROM table1
+WHERE var IN (SELECT var FROM table2 WHERE ____);
+```
+
+
+<br>
+
+## SET THEORY
+
+Where joins will add columns to your data, with set theory you are adding rows.
+
++ `UNION`: every record that is in both tables
++ `UNION ALL`: every record in both + duplicates for the intersect
++ `INTERSECT`: all records that appear in both
++ `EXCEPT`: all records that only appear in one table
+
+Syntax:
+
+```
+SELECT var1, var2 FROM table1
+UNION
+SELECT var1, var2 FROM table2;
+```
+
+
 
 <br><hr><br>
 
