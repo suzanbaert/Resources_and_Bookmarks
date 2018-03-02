@@ -9,6 +9,10 @@
 
 + [Programming with dplyr](http://dplyr.tidyverse.org/articles/programming.html)
 
++ [Filter with context](https://purrple.cat/blog/2017/06/28/filter-with-context/)
+
++ [Follow up on filter with context](https://purrple.cat/blog/2018/03/02/multiple-lags-with-tidy-evaluation/)
+
 
 
 
