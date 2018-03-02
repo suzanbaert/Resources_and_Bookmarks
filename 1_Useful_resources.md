@@ -2,6 +2,34 @@
 
 With this page I intend to keep track of some useful tutorials or blogposts.
 
+## books
+
++ Starter guides: [R for data science by Hadley Wickham and Garrett Grolemund](http://r4ds.had.co.nz/)
+
++ Starter guides:[Modern Dive, by Chester Ismay and Albert Y. Kim](http://moderndive.com/)
+
++ Starter guides: [Data Analysis and Visualization Using R, by David Robinson](http://varianceexplained.org/RData/)
+
++ Data Viz: [Data Visualization, a practical introduction, by Kieran Healy](http://socviz.co/)
+
++ Text Analytics: [Tidy Text Mining, by Julia Silge and David Robinson](https://www.tidytextmining.com/)
+
++ Twitter data: [21 Recipes for Mining Twitter Data with rtweet](https://rud.is/books/21-recipes/)
+
++ Building R packages: [R packages, by Hadley Wickham](http://r-pkgs.had.co.nz/)
+
++ Advanced R: [Advanced R, by Hadley Wickham](http://adv-r.had.co.nz/)
+
++ GIT: [Git in practice, by Mike McQuaid](https://github.com/GitInPractice/GitInPractice#readme)
+
++ GIT: [Happy with GIT for R, by Jenny Bryan](http://happygitwithr.com/)
+
++ Blogdown: [Creating Websites with R Markdown, by Yihui Xie et al.](https://bookdown.org/yihui/blogdown/)
+
++ Bookdown: [Authoring Books and Technical Documents with R Markdown, by Yihui Xie](https://bookdown.org/yihui/bookdown/)
+
+
+<br><hr><br>
 
 ## Courses
 
@@ -9,9 +37,11 @@ With this page I intend to keep track of some useful tutorials or blogposts.
 
 
 
-<br>
+<br><hr><br>
 
-## Plots
+## Blog Posts
+
+### Plots
 
 + [Beautiful highlight plots](https://yutani.rbind.io/post/2017-10-06-gghighlight/)
 
@@ -25,13 +55,13 @@ With this page I intend to keep track of some useful tutorials or blogposts.
 
 <br>
 
-## Dplyr advanced
+### Dplyr advanced
 
 + [Dplyr Data Wrangling Part 1: Basic to Advanced Ways to Select Columns](https://suzan.rbind.io/2018/01/dplyr-tutorial-1/) - including `select_if()`, `contains()` and `everything()`.
 
 + [Dplyr Data Wrangling Part 2: Mutating your columns into the right shape](https://suzan.rbind.io/2018/02/dplyr-tutorial-2/) - including `mutate_all()`, `mutate_if()` and `case_when()`.
 
-+ Dplyr Data Wrangling Part 3: Basic and more advanced ways to filter rows](https://suzan.rbind.io/2018/02/dplyr-tutorial-3/) - including `near()`, `filter_all()` and `filter_if()`.
++ [Dplyr Data Wrangling Part 3: Basic and more advanced ways to filter rows](https://suzan.rbind.io/2018/02/dplyr-tutorial-3/) - including `near()`, `filter_all()` and `filter_if()`.
 
 + [Programming with dplyr](http://dplyr.tidyverse.org/articles/programming.html) - including the `!!` bang bang operator
 
@@ -40,7 +70,7 @@ With this page I intend to keep track of some useful tutorials or blogposts.
 
 <br>
 
-## Purrr
+### Purrr
 
 + [Purrr tutorial by Charlotte Wickham](https://github.com/cwickham/purrr-tutorial)
 
@@ -53,20 +83,19 @@ With this page I intend to keep track of some useful tutorials or blogposts.
 
 <br>
 
-## On making packages
+### On making packages
 
 + [Maelle Salmon's how To make good packages](http://www.masalmon.eu/2017/12/11/goodrpackages/)
-
-+ [R packages - Book by Hadley Wickham](http://r-pkgs.had.co.nz/)
 
 + [packages for internal data](http://rmhogervorst.nl/cleancode/blog/2016/03/07/create-package-for-dataset.html)
 
 
 
-
 <br>
 
-## Tidy Eval
+
+
+### Tidy Eval
 
 + [Tidy eval in 5 minutes](https://www.youtube.com/watch?v=nERXS3ssntw)
 
@@ -75,22 +104,14 @@ With this page I intend to keep track of some useful tutorials or blogposts.
 
 <br>
 
-## GIT
 
-+ [Git in practice (BOOK)](https://github.com/GitInPractice/GitInPractice#readme)
-
-+ [Happy with GIT for R (BOOK)](http://happygitwithr.com/)
-
-
-<br>
-
-## Miscelaneous
+### Miscelaneous
 
 + [Making GIFs in R to add to a blog](https://blogdown-demo.rbind.io/2018/01/31/gif-animations/)
 
 + [Gorgeous colour palette](https://github.com/jkaupp/nord)
 
-![nord/man/figures/README-palettes-1.png ]
+![](nord/man/figures/README-palettes-1.png)
 
 + [Package for manipulation office documents](https://davidgohel.github.io/officer/)
 
@@ -98,7 +119,7 @@ With this page I intend to keep track of some useful tutorials or blogposts.
 
 
 
-<br>
+<br><hr><br>
 
 ## Other platforms
 
