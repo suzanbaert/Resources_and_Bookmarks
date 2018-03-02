@@ -2,7 +2,7 @@
 
 **Contents:**
 
-+ [Git vocabulary](#vocabulary)
++ [GIT Vocabulary](#git-vocabulary)
 + [Initializing your repository set up](#initializing-your-repository-set-up)
 + [Basic GIT workflow](#basic-git-workflow)
 + [Working with branches](#working-with-branches)
@@ -12,7 +12,8 @@
 
 
 <br>
-## Vocabulary
+
+## GIT Vocabulary
 
 + `origin`: default name of the remote repository
 
