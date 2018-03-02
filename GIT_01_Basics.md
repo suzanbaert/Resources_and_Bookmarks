@@ -207,6 +207,8 @@ Useful:
 + `git tag --delete TagName`: Deletes a tag
 
 
+<br><hr>
+
 ## GIT Stash
 
 To stash some changes to perhaps use later again. By making a stash, you bring the repo back to the previous committed stage.

@@ -72,12 +72,13 @@ A commit message window will show, change your commit message and press `ESC` fo
 
 **2. Add something to the latest commit**
 
-A file that wasn't saved, or a quick typo that you've spotted. Make the change needed, and then add to the previous commit:
-
+A file that wasn't saved, or a quick typo that you've spotted. Make the change needed, and then add to the previous commit.
 ```
 $ git add -A
 $ git commit --amend
 ```
+
+Best to do this before it's being pushed to the remote repo. In case it's already there, the push needs to be forced as the master/origin already has that commit: `git push origin +master`.
 
 **3. Undoing the latest commit (but keeping changes)**
 
