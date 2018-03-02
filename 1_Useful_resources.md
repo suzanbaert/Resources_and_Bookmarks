@@ -2,7 +2,7 @@
 
 With this page I intend to keep track of some useful tutorials or blogposts.
 
-## books
+## Books
 
 + Starter guides: [R for data science by Hadley Wickham and Garrett Grolemund](http://r4ds.had.co.nz/)
 
@@ -30,6 +30,7 @@ With this page I intend to keep track of some useful tutorials or blogposts.
 
 
 <br><hr><br>
+
 
 ## Courses
 
@@ -83,7 +84,14 @@ With this page I intend to keep track of some useful tutorials or blogposts.
 
 <br>
 
-### On making packages
+### Stats
+
++ [Inference mind map](https://coggle.it/diagram/Vxlydu1akQFeqo6-/t/inference)
+
+
+<br>
+
+### Making packages
 
 + [Maelle Salmon's how To make good packages](http://www.masalmon.eu/2017/12/11/goodrpackages/)
 
@@ -100,6 +108,14 @@ With this page I intend to keep track of some useful tutorials or blogposts.
 + [Tidy eval in 5 minutes](https://www.youtube.com/watch?v=nERXS3ssntw)
 
 + [Tidy Eval in Advanced R Book](https://adv-r.hadley.nz/meta.html) - Chapters 18-21
+
+
+<br>
+
+### Git
+
++ [Atlassian GIT tutorials](https://www.atlassian.com/git/tutorials/git-stash)
+
 
 
 <br>
