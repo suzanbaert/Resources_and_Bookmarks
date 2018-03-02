@@ -117,11 +117,18 @@ With this page I intend to keep track of some useful tutorials or blogposts.
 
 + [Getting your table of contents where you want (Rmd) it](https://www.garrickadenbuie.com/blog/2018/02/28/add-a-generated-table-of-contents-anywhere-in-rmarkdown/)
 
++ [Jenny on package "here"](https://github.com/jennybc/here_here)
 
 
-<br><hr><br>
+
+<br><hr>
 
 ## Other platforms
+
+### Python
+
++ [Extensive Python notes](https://chrisalbon.com/)
+
 
 ### Data.world
 

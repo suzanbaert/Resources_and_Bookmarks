@@ -1,27 +1,53 @@
 # GIT Basics
 
+**Contents:**
+
++ [Git vocabulary](#vocabulary)
++ [Initializing your repository set up](#initializing-your-repository-set-up)
++ [Basic GIT workflow](#basic-git-workflow)
++ [Working with branches](#working-with-branches)
++ [GIT Stash](#git-stash)
++ [Renaming, moving and deleting files/folders/repos](#renaming-moving-and-deleting)
+
+
+
+<br>
+## Vocabulary
+
++ `origin`: default name of the remote repository
+
++ `master`: name of your default branch, but also a ref for the last commit on master.
+
++ `master^1` is a synonym for `master~1` and refers to the parent commit of master. In other words: this is the last but one commit. You can keep counting back this way.
+
++ `HEAD`: reference to the last commit of the branch you are currently on. If you are on the master branch, then HEAD and master will refer to the same commit.
+
++ `HEAD^1` is the same as `HEAD~1` and is the parent commit of HEAD, i.e. the last but one commit on this branch.
+
+<br><hr>
+
 ## Initializing your repository set up
 
 ### Starting a completely new project
 Step 1: Make a new repository on github and grab the link from the clone with SSH option.
-Step 2: Make a new project in R studio with Git control and copy the link. 
+Step 2: Make a new project in R studio with Git control and copy the link.
 
 ### An existing project on your PC that is not yet tracked by Git
 First make a remote repository on Github and grab the link from the clone with SSH option.
 Browse through the right folder in the command line, or browse in your normal explorer to the right folder and right click “Git Bash here”:
 
 ```
-#Initialize git tracking
+#-- Initialize git tracking
 $ git init
 
-#Add the remote repository
+-- Add the remote repository
 $ git remote add origin YourGithubLink
 
-#Add and commit the files
+-- Add and commit the files
 $ git add -A
 $ git commit m "commit message"
 
-#Make the link between the local and remote repository
+-- Make the link between the local and remote repository
 $ git push -u origin master
 ```
 
@@ -29,49 +55,66 @@ $ git push -u origin master
 ### An existing project on Github but not yet on your pc
 Browse to the right root folder and type in Bash:
 ```
-#Making a copy of the repository 
+-- Making a copy of the repository
 $ git clone TheGithubLink
 ```
 
-<br><br>
-<hr>
-<br>
+<br><hr>
 
 ## Basic GIT workflow
 
-Basic workflow: git add, git commit, git push.
+Basic workflow:
++ `git add` to add from your working directory to your staging area
++ `git commit` to add the files to your local GIT
++ `git push` to add the files to your remote GIT  
 
-Optional elements
-`git status`: shows which files have changed/new..  
-`git diff`: shows the changes you made to the file  
+If you are working in collaboration: add a `git pull` to get the latest repository content before pushing up to the remote.
 
 ```
-#First check whether you have the latest material (if you are collaborating or work on multiple pc's on the same repo)
-$ git pull
-
-#Add all the files to the staging area
+-- Add all the files to the staging area
 $ git add -A
 
-#Make a commit on your work
+-- Make a commit on your work
 $ git commit -m "enter your commit message"
 
-#Push your latest commit to github
-$ git push origin master
+-- Push your latest commit to github
+$ git push
 ```
 
-The above code adds every change to the staging area. You can specify filenames, filetypes, folders etc...  
+Optional elements:
++ `git status`: shows which files have changed/new.  
++ `git diff`: shows the changes you made to the file  
+
+Notes on adding content to the staging area:  
 + `git add filename.ext` will only stage the specific file  
 + `git add *.R` will stage all .R files  
-+ `git add data/` will add the data folder  
++ `git add data/` will add the data folder and its contents
 + `git add .` stages all new and modified files, but does remove any deleted files  
 + `git add -u` stages all modified and deleted files, but does not stage any new (and therefore untracked) files  
-+ `git add -A` stages all new, modified and deleted  
++ `git add -A` stages all new, modified and deleted
 
-If you want to remove untracked files/folders: `git clean -df`
+Cleaning up your working directory:
++ `git clean -n`: dry run, shows all files that will be deleted
++ `git clean -df`: removes all untracked files/folders
 
-<br><br>
-<hr>
-<br>
+Gitignore:  
+Add a file `.gitignore` which lists all files that should be ignored by GIT. To add files to `.gitignore` within the command line:
+
+```
+$ echo *.Rproj > .gitignore
+```
+
+
+
+
+Note on adding files to the remote:  
+When it is your first push from a repo, you will first have to make the link between the local and remote repository via: `git push  --set-upstream origin master`, or shorter `git push -u origin master`. As of then, `git push` will refer to the upstream branch you've set: i.e. origin/master.
+
+You can use git diff to check the difference between the remote and the local repo: `git diff master origin/master` will check the differences between the latest commit locally (master) and latest commit remotely (origin/master)
+
+
+
+<br><hr>
 
 ## Working with branches
 
@@ -81,49 +124,132 @@ Adding -u ensures that the local and remote branch are connected.
 
 
 Optional useful commands:
-`git branch -a`: lists all existing branches (local and remote)
-`git branch --merged`: lists all merged branches
++ `git branch -a`: lists all existing branches (local and remote)
++ `git branch --merged`: lists all merged branches
 
-**First create the new branch**
-Create the new branch and check it out so you start working on that branch:
+Step 1: Create the new branch and check it out so you start working on that branch:
 
 ```
-#Creating a new branch locally
+-- Creating a new branch locally:
 $ git branch YourBranchName
 
-#Creating the new branch remotely
+-- Creating the new branch remotely:
 $ git push -u origin YourBranchName
 
-#Swapping to the new branch to work on
+-- Swapping to the new branch to work on:
 $ git checkout YourBranchName
 ```
-
-Work on the branch as you are used to: add, commit, push to the branch (not to master obviously!)
+step 2: Work on the branch as you are used to: add, commit, push to the branch (not to master obviously!)
 ```
 git add -A
 git commit -m "added something to new branch"
 git push origin YourBranchName
 ```
 
-If you are ready to merge:
+Step 3: If you are ready to merge:
 ```
-#Changing back to master branch
+-- Changing back to master branch:
 $ git checkout master
 
-#Make sure your copy of master is up to date
+-- Make sure your copy of master is up to date:
 $ git pull origin master
 
-#Merging the branch on the master
+-- Merging the branch on the master:
 $ git merge YourBranchName
 
-#Optional: check the merged branches, YourBranchName should be in the list
+-- Optional: check the merged branches, YourBranchName should be in the list:
 $ git branch --merged
 
-#Push the changes of master to the remote repository
+-- Push the changes of master to the remote repository:
 $ git push origin master
 
-#Deleting the branch locally
-$ git branch -d YourBranchName
+-- Deleting the branch remotely:
+$ git push --delete origin YourBranchName
 
-#Deleting the branch remotely
-$ git push origin --delete YourBranchName
+-- Deleting the branch locally:
+$ git branch -d YourBranchName
+```
+
+<br>
+<hr>
+
+## GIT Stash:
+
+To stash some changes to perhaps use later again. By making a stash, you bring the repo back to the previous committed stage.
+
+Making a new stash
+```
+-- to stash tracked files:
+$ git stash save
+
+-- to also stash untracked files:
+$ git stash save -u
+```
+
+Restoring the stashed changes: default the latst stash
+```
+$ git stash pop
+```
+
+
+Useful:
++ `git stash list`: lists stashes
++ `git stash clear`: clearing all previous stashes
+
+
+
+<br>
+<hr>
+
+
+
+## Renaming, moving and deleting
+
+### Files and folders
+
+If you've renamed or moved a file, GIT by default will see it as a deletion and a new addition of a file, and not realize that these files are related.  
+You can also get GIT to rename/move a file via `git mv` in which case history will be preserved. After renaming/moving, `git status` will not show an addition/deletion but a rename that is already staged and ready to be committed.
+
+To rename a file:
+```
+$ git mv oldfile.ext newfile.ext
+```
+
+To move a file to a folder:
+```
+$ git mv file.ext foldername/file.ext
+```
+
+If the new location already has a file with the same filename that you want to overwrite, use `--force` or shorter `-f`
+```
+$ git mv --force file.ext foldername/file.ext
+```
+
+To delete a file:
+```
+$ git rm file.ext
+```
+
+To delete a folder with files:
+```
+-- dry run first to see what check what is inside:
+$ git rm -r --dry-run folder/
+
+--delete folder and files inside:
+$ git rm -r folder/
+```
+
+### Renaming a remote repository
+
+If you've changed your repository name on Github, you'll have to you change your local repository's remote links. You can delete and re-clone of course, but you can also just change your remote link.  
+
+To view your current remote links:   
+`$ git remote -v`  
+
+To change your remote URL in one go:  
+`$ git remote set-url origin YourNewLink`  
+
+Alternative option in multiple steps:  
+Delete current remote: `$ git remote rm origin`  
+Add new remote: `$ git remote add origin YourNewLink`    
+Confirm the link: `$ git push -u origin master`  
