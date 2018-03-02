@@ -6,6 +6,7 @@
 + [Initializing your repository set up](#initializing-your-repository-set-up)
 + [Basic GIT workflow](#basic-git-workflow)
 + [Working with branches](#working-with-branches)
++ [GIT Tags](#git-tags)
 + [GIT Stash](#git-stash)
 + [Renaming, moving and deleting files/folders/repos](#renaming-moving-and-deleting)
 
@@ -69,8 +70,6 @@ Basic workflow:
 + `git commit` to add the files to your local GIT
 + `git push` to add the files to your remote GIT  
 
-If you are working in collaboration: add a `git pull` to get the latest repository content before pushing up to the remote.
-
 ```
 -- Add all the files to the staging area
 $ git add -A
@@ -101,10 +100,17 @@ Cleaning up your working directory:
 Gitignore:  
 Add a file `.gitignore` which lists all files that should be ignored by GIT. To add files to `.gitignore` within the command line:
 
++ `touch .gitignore`: will create a .gitignore file
++ `echo *.Rproj > .gitignore`: create and add R projct file to ignore
+
 ```
 $ echo *.Rproj > .gitignore
 ```
 
+If you are working in collaboration: add a `git pull` to get the latest repository content before pushing up to the remote.
++ `git pull`: with fetch the latest from the remote and merge them into you changes
++ `git fetch`: will only fetch the latest changes but not merge them
++ `git pull --rebase`: will pull commits from remote, and rebase your current commits on top of the upstream changes.
 
 
 
@@ -140,11 +146,22 @@ $ git push -u origin YourBranchName
 -- Swapping to the new branch to work on:
 $ git checkout YourBranchName
 ```
-step 2: Work on the branch as you are used to: add, commit, push to the branch (not to master obviously!)
+Step 2: Work on the branch as you are used to: add, commit, push to the new branch (link is already cemented in previous `git push -u` so no need to keep repeating it).
 ```
 git add -A
 git commit -m "added something to new branch"
 git push origin YourBranchName
+```
+
+Steps 1 & 2 in one go:
+```
+-- checkout a newly made branch:
+$ git checkout -b NewBranch
+
+-- make your changes and create remote branch when pushing the first time:
+$ git add -A
+$ git commit -m "message"
+$ git push -u origin Newbranch
 ```
 
 Step 3: If you are ready to merge:
@@ -158,10 +175,7 @@ $ git pull origin master
 -- Merging the branch on the master:
 $ git merge YourBranchName
 
--- Optional: check the merged branches, YourBranchName should be in the list:
-$ git branch --merged
-
--- Push the changes of master to the remote repository:
+-- Push the changes to master to the remote repository:
 $ git push origin master
 
 -- Deleting the branch remotely:
@@ -171,10 +185,29 @@ $ git push --delete origin YourBranchName
 $ git branch -d YourBranchName
 ```
 
+When there are no changes to the master, the branch can be merged "fast forward". Sometimes it's good to force a merge commit, so the information is in the history. To do so: `$ git merge --no-ff BranchName`.  
+
+Instead of merging, you can also `git rebase` (see later).  
+
+
 <br>
 <hr>
 
-## GIT Stash:
+## GIT tags
+
+To tag the current state of master (tag will be added to the last commit):
+```
+$ git tag v0.1
+```
+
+
+Useful:
++ `git tag`: To list all tags
++ `git tag --force TagName`: Updates a previous tag to the latest commit
++ `git tag --delete TagName`: Deletes a tag
+
+
+## GIT Stash
 
 To stash some changes to perhaps use later again. By making a stash, you bring the repo back to the previous committed stage.
 
@@ -254,3 +287,14 @@ Alternative option in multiple steps:
 Delete current remote: `$ git remote rm origin`  
 Add new remote: `$ git remote add origin YourNewLink`    
 Confirm the link: `$ git push -u origin master`  
+
+
+<br><hr>
+
+## Resources
+
++ [Atlassian GIT tutorials](https://www.atlassian.com/git/tutorials/git-stash)
+
++ [Git in practice, by Mike McQuaid](https://github.com/GitInPractice/GitInPractice#readme)
+
++ [Youtube tutorials by Corey Schafer](https://www.youtube.com/watch?v=HVsySz-h9r4&list=PL-osiE80TeTuRUfjRe54Eea17-YfnOOAx)
