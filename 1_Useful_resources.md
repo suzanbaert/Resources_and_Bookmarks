@@ -29,18 +29,22 @@ With this page I intend to keep track of some useful tutorials or blogposts.
 + Bookdown: [Authoring Books and Technical Documents with R Markdown, by Yihui Xie](https://bookdown.org/yihui/bookdown/)
 
 
-<br><hr><br>
-
-
-## Courses
-
-+ [Google machine learning crash course](https://developers.google.com/machine-learning/crash-course/)
 
 
 
-<br><hr><br>
+<br><hr>
 
-## Blog Posts
+## R-Weekly
+Collection of blogs and tutorials - published weekly:
+
++ [Latest publication](https://rweekly.org/)
+
++ [Archive](https://rweekly.org/archive)
+
+
+<br><hr>
+
+## Selected Blog Posts
 
 ### Plots
 
