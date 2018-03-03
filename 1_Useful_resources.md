@@ -42,6 +42,8 @@ Collection of blogs and tutorials - published weekly:
 + [Archive](https://rweekly.org/archive)
 
 
+
+
 <br><hr>
 
 ## Selected Blog Posts
@@ -55,6 +57,8 @@ Collection of blogs and tutorials - published weekly:
 + [Fixing the bar chart issue when no data is present](https://twitter.com/hadleywickham/status/954339479111786496) - Hadley's answer to me. Requires the latest dev version of ggplot2.
 
 + [Creating corporate colour palettes](https://drsimonj.svbtle.com/creating-corporate-colour-palettes-for-ggplot2)
+
++ [Compilation of ggplot color palettes](https://github.com/EmilHvitfeldt/r-color-palettes)
 
 
 
@@ -91,6 +95,7 @@ Collection of blogs and tutorials - published weekly:
 ### Stats
 
 + [Inference mind map](https://coggle.it/diagram/Vxlydu1akQFeqo6-/t/inference)
+
 
 
 <br>
@@ -133,7 +138,7 @@ Collection of blogs and tutorials - published weekly:
 
 ![](nord/man/figures/README-palettes-1.png)
 
-+ [Package for manipulation office documents](https://davidgohel.github.io/officer/)
++ [Package for manipulation of office documents](https://davidgohel.github.io/officer/)
 
 + [Getting your table of contents where you want (Rmd) it](https://www.garrickadenbuie.com/blog/2018/02/28/add-a-generated-table-of-contents-anywhere-in-rmarkdown/)
 

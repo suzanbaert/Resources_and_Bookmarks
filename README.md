@@ -11,7 +11,6 @@ The main audience for this repo is future me, and to make sure I can access it f
 
 + [My ever growing list of interesting bookmarks](1_Useful_resources.md)
 
-+ [My favourite blogs](2_Favourite_blogs.md) - still very much under construction
 
 
 <br><hr>
