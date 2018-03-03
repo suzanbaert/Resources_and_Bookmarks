@@ -111,6 +111,15 @@ Collection of blogs and tutorials - published weekly:
 <br>
 
 
+### Slides
+
++ [Alison's Xaringan post](https://alison.rbind.io/post/r-ladies-slides/)
+
++ [Larie's getting started with xaringan](https://aczane.netlify.com/2018/03/02/i-m-not-a-ninja-but-i-ve-got-some-slides/)
+
+
+<br>
+
 
 ### Tidy Eval
 
