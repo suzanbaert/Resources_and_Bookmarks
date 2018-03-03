@@ -20,11 +20,11 @@
 
 + `master`: name of your default branch, but also a ref for the last commit on master.
 
-+ `master^1` is a synonym for `master~1` and refers to the parent commit of master. In other words: this is the last but one commit. You can keep counting back this way.
++ `master^1` is a synonym for `master^` and `master~1` and refers to the parent commit of master. In other words: this is the last but one commit. You can keep counting back this way.
 
 + `HEAD`: reference to the last commit of the branch you are currently on. If you are on the master branch, then HEAD and master will refer to the same commit.
 
-+ `HEAD^1` is the same as `HEAD~1` and is the parent commit of HEAD, i.e. the last but one commit on this branch.
++ `HEAD^1` is the same as `HEAD^` and `HEAD~1` and is the parent commit of HEAD, i.e. the last but one commit on this branch.
 
 <br><hr>
 
@@ -85,7 +85,7 @@ Optional elements:
 + `git status`: shows which files have changed/new.  
 + `git diff`: shows the changes you made to the file  
 
-Notes on adding content to the staging area:  
+Different ways to **add** elements to the staging area:
 + `git add filename.ext` will only stage the specific file  
 + `git add *.R` will stage all .R files  
 + `git add data/` will add the data folder and its contents
@@ -97,25 +97,30 @@ Cleaning up your working directory:
 + `git clean -n`: dry run, shows all files that will be deleted
 + `git clean -df`: removes all untracked files/folders
 
+
+Note on adding files to the remote:  
++ When it is your first push from a repo, you will first have to make the link between the local and remote repository via: `git push  --set-upstream origin master`, or shorter `git push -u origin master`. As of then, `git push` will refer to the upstream branch you've set: i.e. origin/master.
+
+
 Gitignore:  
 Add a file `.gitignore` which lists all files that should be ignored by GIT. To add files to `.gitignore` within the command line:
 
 + `touch .gitignore`: will create a .gitignore file
 + `echo *.Rproj > .gitignore`: create and add R projct file to ignore
 
-```
-$ echo *.Rproj > .gitignore
-```
 
-If you are working in collaboration: add a `git pull` to get the latest repository content before pushing up to the remote.
-+ `git pull`: with fetch the latest from the remote and merge them into you changes
-+ `git fetch`: will only fetch the latest changes but not merge them
-+ `git pull --rebase`: will pull commits from remote, and rebase your current commits on top of the upstream changes.
+<br>
 
+**Notes for collaborative repos:**
 
+If a collaborative repo, the origin/master might be ahead of yours due to work from other people, and you won't be able to just push content.  
 
-Note on adding files to the remote:  
-When it is your first push from a repo, you will first have to make the link between the local and remote repository via: `git push  --set-upstream origin master`, or shorter `git push -u origin master`. As of then, `git push` will refer to the upstream branch you've set: i.e. origin/master.
+Options:
++ `git pull`: with fetch the latest from the remote and merge them into you changes. this might result in a merge conflict that has to be resolved.
+
++ `git fetch`: will only fetch the latest changes but not merge them. it will tell you which branches have changed. by running `git diff master origin/master` you can find out what the changes are, and merge manually.
+
++ `git pull --rebase`: will pull commits from remote, and rebase your current commits on top of the upstream changes. it will commit your changes on top of what others have done.
 
 You can use git diff to check the difference between the remote and the local repo: `git diff master origin/master` will check the differences between the latest commit locally (master) and latest commit remotely (origin/master)
 
@@ -230,6 +235,7 @@ $ git stash pop
 
 Useful:
 + `git stash list`: lists stashes
++ `git stash drop`: discards the most recent stash
 + `git stash clear`: clearing all previous stashes
 
 

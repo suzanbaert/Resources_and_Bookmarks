@@ -130,7 +130,7 @@ Collection of blogs and tutorials - published weekly:
 <br>
 
 
-### Miscelaneous
+### Miscellaneous
 
 + [Making GIFs in R to add to a blog](https://blogdown-demo.rbind.io/2018/01/31/gif-animations/)
 
