@@ -44,8 +44,8 @@ Renaming:
 `SELECT var1/var2 AS var3`  
 
 Limiting:  
-`SELECT TOP *`: selects the first   
-Alternative in some SQL dialects: `ELECT * FROM tb LIMIT ;`  
+`SELECT TOP 10 *`: selects the first   
+Alternative in some SQL dialects: `SELECT * FROM tb LIMIT 10;`  
 <br>
 
 ## Where clauses
@@ -154,72 +154,7 @@ SELECT var1, var2 FROM table2;
 
 
 
-<br><hr><br>
-
-
-## Examples:
-All details of Literature Nobel price winners in the eighties:
-```SQL
-SELECT *
-FROM nobel
-WHERE subject = 'Literature'
-AND yr BETWEEN 1980 AND 1989;
-```
-
-Search for all Nobel price winners called John.
-```SQL
-SELECT winner
-FROM nobel
-WHERE winner LIKE 'John %';
-```
-
-Find the details about Eugene O'Neill.
-If you need an apostrophe inside a search term, use two single quotes within the quoted string.
-```SQL
-SELECT *
-FROM nobel
-WHERE winner = 'Eugene O''Neill';
-```
-
-Select countries with a bigger population than the largest one in Europe
-```SQL
-SELECT name
-FROM world
-WHERE population >= ALL(SELECT population FROM world
-                        WHERE continent = 'Europe' AND population>0);
-```
-
-
-Find the largest country (by area) in each continent, show the continent, the name and the area:
-```SQL
-SELECT continent, name, area
-FROM world AS x
-WHERE area >= ALL (SELECT area FROM world AS y
-                   WHERE y.continent=x.continent AND area>0);
-```
-
-Select the code that shows the countries belonging to regions with all populations over 50000
-```SQL
-SELECT name, region, population
-FROM world x
-WHERE 50000 < ALL (SELECT population FROM world y
-                   WHERE x.region=y.region AND y.population>0);
-```
-
-Give the number of countries per continent with a population greater than 10000000
-```SQL
-SELECT continent, COUNT(name)
-FROM world
-WHERE population >= 10000000
-GROUP BY continent;
-```
-List the continents that have a total population of at least 100 million.
-```SQL
-SELECT continent
-FROM world
-GROUP BY continent
-HAVING SUM(population) >= 100000000;
-```
+<br><hr>
 
 
 ## Acknowledgements

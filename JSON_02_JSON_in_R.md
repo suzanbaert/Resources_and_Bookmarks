@@ -4,7 +4,8 @@ Notes from my JSON woes...
 
 ## Parsing to JSON arrays within R:
 
-The easiest are JSON arrays: you can make them from any dataframe:
+JSON arrays: parse from any dataframe.  
+Using `pretty = TRUE` gives the indented form.
 
 ```
 one_car_df <- mtcars[1, 1:3]
@@ -23,7 +24,7 @@ toJSON(one_car_df, pretty = TRUE)
 
 <br>
 
-If you're dataframe has more than one row, it will result in a JSON array of objects:
+If the dataframe has more than one row, it will result in a JSON array of objects:
 
 ```
 two_cars_df <- mtcars[1:2, 1:3]
@@ -48,7 +49,7 @@ toJSON(two_cars_df, pretty = TRUE)
 
 ## Parsing to JSON objects within R:
 
-To make JSON objects you need to start from a list in R.  
+To make JSON objects, you need to start from a list in R.  
 
 ```
 car_list <- list(name = "Mazda RX4",

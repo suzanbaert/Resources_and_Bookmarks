@@ -10,15 +10,20 @@ The main audience for this repo is future me, and to make sure I can access it f
 
 + [My list of interesting bookmarks](1_Useful_resources.md)
 
-+ [My favourite blogs](2_Favourite_blogs.md)
++ [My favourite blogs](2_Favourite_blogs.md) - still very much under construction
 
 
 
 
-## Summaries of courses taken
+## My cheat sheets
+
+Summaries of courses taken, but more frequently: my cheat sheets.  
+Notes of things I always forget, or fixes to the struggles I've had...
 
 + [SQL notes](SQL_01_basics.md)
 
 + [GIT notes Part 1 - Getting the basics](GIT_01_Basics.md)
 
 + [GIT notes Part 2 - Fixing when things go wrong](GIT_02_Fixing_screwups.md)
+
++ [Parsing to JSON in R](JSON_02 _JSON_in_R.md)
