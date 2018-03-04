@@ -40,6 +40,20 @@ Aggregates:
 `SELECT MAX(var)`: returns maximum, similarly there is `MIN`   
 `SELECT COUNT(var)`: Return the number of values    
 
+Making new discretes:
+Case when allows to factor/rename elements.  
+If no ELSE statement, it will return NULL for anything not yet captured by the above conditions.
+
+```
+SELECT col1,
+  CASE WHEN condition1 THEN value1
+       WHEN condition2 THEN value2  
+       ELSE def_value
+  END AS NewColName
+FROM table1;
+```
+
+
 Renaming:  
 `SELECT var1/var2 AS var3`  
 
@@ -66,19 +80,6 @@ AND, OR, XOR (exclusive or)
 ## Grouping
 Adding `GROUP BY(var)` causes other functions as SUM and COUNT to applied over the groups. It will return a row per group.  
 A `HAVING` will filter the groups displayed. WHERE clause filters rows before the aggregation, the HAVING clause filters after the aggregation.  
-
-Case when:  
-Allows to factor/rename elements.  
-If no ELSE statement, it will return NULL for anything not yet captured by the above conditions.
-
-```
-SELECT col1,
-  CASE WHEN condition1 THEN value1
-       WHEN condition2 THEN value2  
-       ELSE def_value
-  END
-FROM table1;
-```
 
 
 

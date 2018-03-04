@@ -2,7 +2,7 @@
 
 Notes from my JSON woes...
 
-## Parsing to JSON arrays within R:
+## Parsing to JSON arrays within R (jsonlite):
 
 JSON arrays: parse from any dataframe.  
 Using `pretty = TRUE` gives the indented form.
@@ -47,7 +47,7 @@ toJSON(two_cars_df, pretty = TRUE)
 
 <br><br>
 
-## Parsing to JSON objects within R:
+## Parsing to JSON objects within R (jsonlite):
 
 To make JSON objects, you need to start from a list in R.  
 
