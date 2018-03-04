@@ -15,6 +15,8 @@
 
 + [No. 1 — Introduction, and Averaging Polls of the 2016 U.S. Presidential Election](http://www.thecrosstab.com/datascience/r-1/)
 
++ [split-apply-unsplit](https://coolbutuseless.bitbucket.io/2018/03/03/split-apply-combine-my-search-for-a-replacement-for-group_by---do/)
+
 
 
 

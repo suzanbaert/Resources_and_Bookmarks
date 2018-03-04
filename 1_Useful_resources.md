@@ -81,11 +81,15 @@ Collection of blogs and tutorials - published weekly:
 
 ### Purrr
 
++ [Purrr tutorial by Jenny Bryan](https://jennybc.github.io/purrr-tutorial/)
+
 + [Purrr tutorial by Charlotte Wickham](https://github.com/cwickham/purrr-tutorial)
 
 + [Crazy thing called purrr](http://colinfay.me/purrr-web-mining/) - first one in a series of six
 
 + [Introduction to purrr](https://emoriebeck.github.io/R-tutorials/purrr/)
+
++ [Purrr Intro by Emorie Beck](https://emoriebeck.github.io/R-tutorials/)
 
 
 
@@ -163,7 +167,4 @@ Collection of blogs and tutorials - published weekly:
 
 + [Extensive Python notes](https://chrisalbon.com/)
 
-
-### Data.world
-
-+ [Importing data from anywhere on data.world](https://meta.data.world/many-ways-to-import-your-data-82c0e4d6de3d)
++ [Dplyr versus Pandas](https://jarvmiller.github.io/2018/02/28/r-pandas/)
