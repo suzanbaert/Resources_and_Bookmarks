@@ -43,6 +43,7 @@ Aggregates:
 `SELECT COUNT(var)`: Return the number of values
 `SELECT LENGTH(var)`: number of characters in a variable  
 
+
 Alias-ing:  
 `SELECT var1/var2 AS NewColName`   
 
@@ -157,6 +158,19 @@ SELECT var1, var2 FROM table2;
 ```
 
 
+<br>
+
+## Working with dates in SQL
+
+Set of functions designed for dates, [more info here](https://docs.data.world/documentation/sql/concepts/intermediate/working_with_dates.html#-date_part-)
++ `DATE_DIFF(startvar, endvar, unit)` returns the difference between two dates/times. Units can be “year”, “decade”, “century”, “quarter”, “month”, “week”, “day”, “hour”, “minute”, “second”, or “millisecond”.
+
++ `DATE_ADD(startvar, value, unit)`: takes a date/time and adds a specified amount of time (value) to it. Same units as above.
+
++ `SELECT DATE_PART(unit, var)`: returns numeric value for a part of a date/time. Units: “timezone”, “timezonehour”, “timezoneminute”, “year”, “decade”, “century”, “quarter”, “month”, “week”, “day”, “dayofweek”, “dayofyear”, “hour”, “minute”, “second”, and “millisecond”.
+
++ `NOW()`: current day/time stamp
+
 
 <br><hr>
 
@@ -164,3 +178,5 @@ SELECT var1, var2 FROM table2;
 ## Acknowledgements
 
 + [SQL Zoo](http://sqlzoo.net)
+
++ [Data.World Basic to Advanced](https://docs.data.world/documentation/sql/concepts/basic/intro.html)
