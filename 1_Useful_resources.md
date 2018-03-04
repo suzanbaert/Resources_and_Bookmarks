@@ -28,6 +28,9 @@ With this page I intend to keep track of some useful tutorials or blogposts.
 
 + Bookdown: [Authoring Books and Technical Documents with R Markdown, by Yihui Xie](https://bookdown.org/yihui/bookdown/)
 
++ SQL: [Data.World Basic to Advanced tutorials](https://docs.data.world/documentation/sql/concepts/basic/intro.html)
+
+
 
 
 

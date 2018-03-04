@@ -44,6 +44,9 @@ Aggregates:
 `SELECT LENGTH(var)`: number of characters in a variable  
 
 
+REGEX:  
+`REPLACE(var, regex_pattern_to_find, regex_pattern_to_replace)`
+
 Alias-ing:  
 `SELECT var1/var2 AS NewColName`   
 
@@ -60,7 +63,7 @@ SELECT var 1,
 
 Limiting:  
 `SELECT TOP 10 *`: selects the first   
-Alternative in some SQL dialects: `SELECT * FROM tb LIMIT 10;`  
+Alternative in some SQL dialects: `SELECT * FROM table LIMIT 10;`  
 
 <br>
 
@@ -162,7 +165,7 @@ SELECT var1, var2 FROM table2;
 
 ## Working with dates in SQL
 
-Set of functions designed for dates, [more info here](https://docs.data.world/documentation/sql/concepts/intermediate/working_with_dates.html#-date_part-)
+Set of functions designed for dates, [more info here](https://docs.data.world/documentation/sql/concepts/intermediate/working_with_dates.html#-date_part-) or [here](https://docs.data.world/documentation/sql/reference/date_functions.html)
 + `DATE_DIFF(startvar, endvar, unit)` returns the difference between two dates/times. Units can be “year”, “decade”, “century”, “quarter”, “month”, “week”, “day”, “hour”, “minute”, “second”, or “millisecond”.
 
 + `DATE_ADD(startvar, value, unit)`: takes a date/time and adds a specified amount of time (value) to it. Same units as above.
@@ -170,6 +173,27 @@ Set of functions designed for dates, [more info here](https://docs.data.world/do
 + `SELECT DATE_PART(unit, var)`: returns numeric value for a part of a date/time. Units: “timezone”, “timezonehour”, “timezoneminute”, “year”, “decade”, “century”, “quarter”, “month”, “week”, “day”, “dayofweek”, “dayofyear”, “hour”, “minute”, “second”, and “millisecond”.
 
 + `NOW()`: current day/time stamp
+
+
+<br>
+
+## With subquery:
+`WITH` allows us to create temporary tables that only exist for the duration of the query.
+
+```SQL
+-- Create temporary table (example)
+WITH temptable AS (
+  SELECT ____
+  FROM maintable
+  GROUP BY ____
+)
+
+-- Now use the temptable
+SELECT ____
+FROM temptable
+WHERE ____;
+```
+
 
 
 <br><hr>
