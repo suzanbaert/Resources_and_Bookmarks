@@ -33,6 +33,7 @@ WHERE var1 < (SELECT var1 FROM table WHERE var2 = value2);
 `SELECT ROUND(var1, -3)`: Round the var1 to the nearest 1000 unit  
 `SELECT var1/1000`: You can do immediate calculations inside SELECT  
 `SELECT CONCAT(var1, '%')`: Concatenating text together  
+`SELECT COALESCE(var, alternative)`: Takes the first value that is not NULL. If var is not NULL var will be returned, otherwise the alternative. Function take as many arguments as needed.
 
 Aggregates:  
 `SELECT SUM(var)`: returns sum  
@@ -56,6 +57,16 @@ FROM table1;
 
 Renaming:  
 `SELECT var1/var2 AS var3`  
+
+Discrete:
+Making discrete values based on condition through CASE WHEN:
+```
+SELECT var 1,
+       CASE WHEN condition1 THEN 'Value1'
+            WHEN condition2 THEN 'Value2'
+            ELSE 'Value3'
+       END AS varname
+```
 
 Limiting:  
 `SELECT TOP 10 *`: selects the first   
