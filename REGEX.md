@@ -33,7 +33,8 @@ Otherwise, use package `tau`:
 
 ## Regular expressions
 
-#### Case sensitivity:
+#### Case sensitivity:  
+Options:  
 + Either take lower and upper in your regex
 + Transfer the vector to lower case: `str_extract(tolower(vector), pattern= "_____")`
 + Add ignore case to the pattern: `str_extract(vector, pattern= ignore.case("_____"))`
@@ -46,7 +47,10 @@ Otherwise, use package `tau`:
 + `$`: end of the string
 
 
-Sequences: (from the Rstudio cheat sheet)
+
+#### Sequences: (from the Rstudio cheat sheet)  
+
+
 ![](images/regex.PNG)
 
 Extra notes:
