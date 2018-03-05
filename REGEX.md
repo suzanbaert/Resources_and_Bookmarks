@@ -37,7 +37,7 @@ Otherwise, use package `tau`:
 Options:  
 + Either take lower and upper in your regex
 + Transfer the vector to lower case: `str_extract(tolower(vector), pattern= "_____")`
-+ Add ignore case to the pattern: `str_extract(vector, pattern= ignore.case("_____"))`
++ Add ignore case to the pattern: `str_extract(vector, pattern= regex("_____", ignore_case=TRUE))`
 
 
 #### Generals:  
