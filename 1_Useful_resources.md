@@ -31,6 +31,11 @@ With this page I intend to keep track of some useful tutorials or blogposts.
 + SQL: [Data.World Basic to Advanced tutorials](https://docs.data.world/documentation/sql/concepts/basic/intro.html)
 
 
+<br
+
+## Webinars and videos
+
++ [Rstudio webinars and conference materials](https://www.rstudio.com/resources/webinars/)
 
 
 
@@ -69,11 +74,11 @@ Collection of blogs and tutorials - published weekly:
 
 ### Dplyr advanced
 
-+ [Dplyr Data Wrangling Part 1: Basic to Advanced Ways to Select Columns](https://suzan.rbind.io/2018/01/dplyr-tutorial-1/) - including `select_if()`, `contains()` and `everything()`.
++ [Dplyr Data Wrangling Part 1: Basic to Advanced Ways to Select Columns](https://suzan.rbind.io/2018/01/dplyr-tutorial-1/)
 
-+ [Dplyr Data Wrangling Part 2: Mutating your columns into the right shape](https://suzan.rbind.io/2018/02/dplyr-tutorial-2/) - including `mutate_all()`, `mutate_if()` and `case_when()`.
++ [Dplyr Data Wrangling Part 2: Mutating your columns into the right shape](https://suzan.rbind.io/2018/02/dplyr-tutorial-2/)
 
-+ [Dplyr Data Wrangling Part 3: Basic and more advanced ways to filter rows](https://suzan.rbind.io/2018/02/dplyr-tutorial-3/) - including `near()`, `filter_all()` and `filter_if()`.
++ [Dplyr Data Wrangling Part 3: Basic and more advanced ways to filter rows](https://suzan.rbind.io/2018/02/dplyr-tutorial-3/)
 
 + [Programming with dplyr](http://dplyr.tidyverse.org/articles/programming.html) - including the `!!` bang bang operator
 
@@ -130,6 +135,8 @@ Collection of blogs and tutorials - published weekly:
 
 ### Tidy Eval
 
++ [Hadley's talk on Rstudio conference 2018](https://www.rstudio.com/resources/videos/tidy-eval-programming-with-dplyr-tidyr-and-ggplot2/)
+
 + [Tidy eval in 5 minutes](https://www.youtube.com/watch?v=nERXS3ssntw)
 
 + [Tidy Eval in Advanced R Book](https://adv-r.hadley.nz/meta.html) - Chapters 18-21
@@ -146,19 +153,26 @@ Collection of blogs and tutorials - published weekly:
 <br>
 
 
+### R Markdown
+
++ [Getting your table of contents where you want (Rmd) it](https://www.garrickadenbuie.com/blog/2018/02/28/add-a-generated-table-of-contents-anywhere-in-rmarkdown/)
+
+
+<br>
+
 ### Miscellaneous
 
 + [Making GIFs in R to add to a blog](https://blogdown-demo.rbind.io/2018/01/31/gif-animations/)
 
 + [Gorgeous colour palette](https://github.com/jkaupp/nord)
 
-![](nord/man/figures/README-palettes-1.png)
+![](https://github.com/jkaupp/nord/blob/master/man/figures/README-palettes-1.png?raw=true)
 
 + [Package for manipulation of office documents](https://davidgohel.github.io/officer/)
 
-+ [Getting your table of contents where you want (Rmd) it](https://www.garrickadenbuie.com/blog/2018/02/28/add-a-generated-table-of-contents-anywhere-in-rmarkdown/)
-
 + [Jenny on package "here"](https://github.com/jennybc/here_here)
+
++ [Generating codebooks about your dataset in R](http://sandsynligvis.dk/articles/18/codebook.html)
 
 
 
