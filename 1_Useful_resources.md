@@ -31,7 +31,7 @@ With this page I intend to keep track of some useful tutorials or blogposts.
 + SQL: [Data.World Basic to Advanced tutorials](https://docs.data.world/documentation/sql/concepts/basic/intro.html)
 
 
-<br
+<br>
 
 ## Webinars and videos
 
