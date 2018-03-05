@@ -20,6 +20,8 @@ The main audience for this repo is future me, and to make sure I can access it f
 Summaries of courses taken, but more frequently: my cheat sheets.  
 Notes of things I always forget, or fixes for the struggles I've had...
 
++ [Encoding/Regex notes](REGEX.md)
+
 + [SQL notes](SQL_01_basics.md)
 
 + [GIT notes Part 1 - Getting the basics](GIT_01_Basics.md)
