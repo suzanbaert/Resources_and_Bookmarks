@@ -3,9 +3,8 @@
 A list of things I always forget how to do:
 
 
-## Fixing the order of bars
+#### Fixing the order of bars
 
-### Normal Plots
 For normal plots or facetted plots with no words reappearing:  
 Col_x is the column on the x-axis that needs re-ordering. Col_y is the column based on which I'm re-ordering.
 
@@ -15,8 +14,9 @@ df %>%
   ggplot(__________)
 ```
 
+<br>
 
-### Facet wrap plots
+#### Facet wrap plot
 Discovered two nifty functions from [David Robinson's personal package](https://github.com/dgrtwo/drlib) to make ordered faceted plots with words that appear multiple times.  
 
 The two functions:
@@ -48,4 +48,23 @@ df %>%
   facet_wrap(~ episode, scales = "free_y", ncol = 3) +
   scale_x_reordered() +
   coord_flip()
+```
+
+
+<br><hr>
+
+
+## geom_point with categorical X-axis
+
+To get some jitter so that not all points are on a line:
+```
+geom_point(position = position_jitter(width = 0.2))
+```
+
+
+To add error bars on the point plot:
+```
+plot +
+stat_summary(fun.y = mean, geom = "point", fill= "red") +
+stat_summary(fun.data = mean_sdl, mult = 1, geom = "errorbar", width = 0.2, col = "red")
 ```
