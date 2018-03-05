@@ -17,6 +17,17 @@
 
 + [split-apply-unsplit](https://coolbutuseless.bitbucket.io/2018/03/03/split-apply-combine-my-search-for-a-replacement-for-group_by---do/)
 
++ [Game of Thrones network analysis](https://shirinsplayground.netlify.com/2018/03/got_network/)
+
+
+<br>
+
+## Plots
+
++ [Causal diagram](https://vilmaromero.github.io/post/2017-02-14-causal-diagram/)
+
++ [Making many added variable plots with purrr and ggplot2 ](https://aosmith.rbind.io/2018/01/31/added-variable-plots/)
+
 
 
 
@@ -41,6 +52,12 @@
 
 + [Follow up on filter with context](https://purrple.cat/blog/2018/03/02/multiple-lags-with-tidy-evaluation/)
 
++ [Some thoughts on tidyveal and environments in R](http://data-se.netlify.com/2017/11/16/tidyeval_basense/)
+
++ [Programming with dplyr: Part 02, writing a function](http://data-se.netlify.com/2017/07/06/prop_fav/)
+
++ [Programming with dplyr: Part 03 strings](http://data-se.netlify.com/2017/08/09/dplyr_strings/)
+
 
 
 <br>
@@ -54,6 +71,8 @@
 + [Blogpost on the PCA analysis of stack overflow](https://stackoverflow.blog/2018/02/28/evaluating-options-amazons-hq2-using-stack-overflow-data/?utm_content=buffer5384c&utm_medium=social&utm_source=twitter.com&utm_campaign=buffer)
 
 + [Google Machine Learning Crash Course](https://developers.google.com/machine-learning/crash-course/)
+
++ [Simple way to separate train and test sample in R](http://data-se.netlify.com/2017/10/17/train-test/)
 
 
 

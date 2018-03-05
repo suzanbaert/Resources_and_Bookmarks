@@ -178,7 +178,7 @@ Set of functions designed for dates, [more info here](https://docs.data.world/do
 <br>
 
 ## With subquery:
-`WITH` allows us to create temporary tables that only exist for the duration of the query.
+`WITH` allows the creation of temporary tables that only exist for the duration of the query.
 
 ```SQL
 -- Create temporary table (example)
@@ -188,7 +188,7 @@ WITH temptable AS (
   GROUP BY ____
 )
 
--- Now use the temptable
+-- Now use the temptable in normal SQL query
 SELECT ____
 FROM temptable
 WHERE ____;

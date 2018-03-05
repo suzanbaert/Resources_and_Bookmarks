@@ -174,6 +174,8 @@ Collection of blogs and tutorials - published weekly:
 
 + [Generating codebooks about your dataset in R](http://sandsynligvis.dk/articles/18/codebook.html)
 
++ [So you've been asked to make a reprex](https://www.jessemaegan.com/post/so-you-ve-been-asked-to-make-a-reprex/)
+
 
 
 <br><hr>
