@@ -153,7 +153,9 @@ Collection of blogs and tutorials - published weekly:
 <br>
 
 
-### R Markdown
+### R Markdown/Markdown
+
++ [Markdown cheat sheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)
 
 + [Getting your table of contents where you want (Rmd) it](https://www.garrickadenbuie.com/blog/2018/02/28/add-a-generated-table-of-contents-anywhere-in-rmarkdown/)
 
