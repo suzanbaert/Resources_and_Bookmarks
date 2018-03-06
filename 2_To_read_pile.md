@@ -76,6 +76,8 @@
 
 + [Google - Learn with Google AI (https://ai.google/education#?modal_active=none)
 
++ [Course notes Deep learning Coursera](https://www.slideshare.net/TessFerrandez/notes-from-coursera-deep-learning-courses-by-andrew-ng)
+
 
 
 <br>
