@@ -31,7 +31,7 @@ With this page I intend to keep track of some useful tutorials or blogposts.
 + SQL: [Data.World Basic to Advanced tutorials](https://docs.data.world/documentation/sql/concepts/basic/intro.html)
 
 
-<br
+<br>
 
 ## Webinars and videos
 
@@ -153,7 +153,9 @@ Collection of blogs and tutorials - published weekly:
 <br>
 
 
-### R Markdown
+### R Markdown/Markdown
+
++ [Markdown cheat sheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)
 
 + [Getting your table of contents where you want (Rmd) it](https://www.garrickadenbuie.com/blog/2018/02/28/add-a-generated-table-of-contents-anywhere-in-rmarkdown/)
 
@@ -187,3 +189,5 @@ Collection of blogs and tutorials - published weekly:
 + [Extensive Python notes](https://chrisalbon.com/)
 
 + [Dplyr versus Pandas](https://jarvmiller.github.io/2018/02/28/r-pandas/)
+
++ [Dplyr versus python](https://gist.github.com/conormm/fd8b1980c28dd21cfaf6975c86c74d07)

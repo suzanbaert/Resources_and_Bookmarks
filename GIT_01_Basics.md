@@ -254,7 +254,7 @@ You can also get GIT to rename/move a file via `git mv` in which case history wi
 
 To rename a file:
 ```
-$ git mv oldfile.ext newfile.ext
+$ git mv oldname.ext newname.ext
 ```
 
 To move a file to a folder:

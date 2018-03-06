@@ -74,7 +74,11 @@
 
 + [Simple way to separate train and test sample in R](http://data-se.netlify.com/2017/10/17/train-test/)
 
++ [Google - Learn with Google AI (https://ai.google/education#?modal_active=none)
 
+
+
+<br>
 
 ## Tutorials
 
