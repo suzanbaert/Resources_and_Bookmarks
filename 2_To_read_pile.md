@@ -19,6 +19,8 @@
 
 + [Game of Thrones network analysis](https://shirinsplayground.netlify.com/2018/03/got_network/)
 
++ [rvest something](https://www.datacamp.com/community/tutorials/r-web-scraping-rvest?utm_campaign=News&utm_medium=Community&utm_source=DataCamp.com)
+
 
 <br>
 
