@@ -90,6 +90,8 @@
 
 + [Purrr](https://towardsdatascience.com/functional-programming-in-r-with-purrr-469e597d0229)
 
++ [R markdown](https://rviews.rstudio.com/2017/11/07/automating-summary-of-surveys-with-rmarkdown/)
+
 
 <br><hr>
 
