@@ -122,7 +122,6 @@ Collection of blogs and tutorials - published weekly:
 
 <br>
 
-
 ### Slides
 
 + [Alison's Xaringan post](https://alison.rbind.io/post/r-ladies-slides/)
@@ -154,6 +153,8 @@ Collection of blogs and tutorials - published weekly:
 
 
 ### R Markdown/Markdown
+
++ [YAML header options](https://rmarkdown.rstudio.com/html_document_format.html)
 
 + [Markdown cheat sheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)
 
