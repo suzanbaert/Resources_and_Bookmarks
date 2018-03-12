@@ -62,6 +62,8 @@ Collection of blogs and tutorials - published weekly:
 
 + [Beautiful highlight plots](https://yutani.rbind.io/post/2017-10-06-gghighlight/)
 
++ [Other way to do highlight plots](https://drsimonj.svbtle.com/plotting-background-data-for-groups-with-ggplot2)
+
 + [The ggplot extension gallery](http://www.ggplot2-exts.org/gallery/)
 
 + [Fixing the bar chart issue when no data is present](https://twitter.com/hadleywickham/status/954339479111786496) - Hadley's answer to me. Requires the latest dev version of ggplot2.
@@ -103,6 +105,12 @@ Collection of blogs and tutorials - published weekly:
 
 
 
+<br>
+
+### Regex
+
++ [Dynamic regex in R](https://stackoverflow.com/questions/16221899/dynamic-regex-in-r)
+
 
 <br>
 
@@ -119,6 +127,8 @@ Collection of blogs and tutorials - published weekly:
 + [Maelle Salmon's how To make good packages](http://www.masalmon.eu/2017/12/11/goodrpackages/)
 
 + [packages for internal data](http://rmhogervorst.nl/cleancode/blog/2016/03/07/create-package-for-dataset.html)
+
++ [Hillary Parker - Making packages from scratch](https://hilaryparker.com/2014/04/29/writing-an-r-package-from-scratch/)
 
 
 
@@ -162,6 +172,11 @@ Collection of blogs and tutorials - published weekly:
 
 + [Getting your table of contents where you want (Rmd) it](https://www.garrickadenbuie.com/blog/2018/02/28/add-a-generated-table-of-contents-anywhere-in-rmarkdown/)
 
+<br>
+
+### Blogdown
++ [Hugo shortcodes](https://github.com/rstudio/blogdown/issues/40)
+
 
 <br>
 
@@ -181,6 +196,8 @@ Collection of blogs and tutorials - published weekly:
 
 + [So you've been asked to make a reprex](https://www.jessemaegan.com/post/so-you-ve-been-asked-to-make-a-reprex/)
 
++ [Rtweet workshop by Mike Kearney](https://mkearney.github.io/nicar_tworkshop/#39)
+
 
 
 <br><hr>
@@ -194,3 +211,12 @@ Collection of blogs and tutorials - published weekly:
 + [Dplyr versus Pandas](https://jarvmiller.github.io/2018/02/28/r-pandas/)
 
 + [Dplyr versus python](https://gist.github.com/conormm/fd8b1980c28dd21cfaf6975c86c74d07)
+
+
+<br>
+
+### Plots
+
++ [Raw graphs](https://www.littlemissdata.com/blog/data-science-graphs-no-code)
+
++ [Flourish](https://www.littlemissdata.com/blog/data-storytelling)
