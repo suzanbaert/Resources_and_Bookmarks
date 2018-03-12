@@ -60,6 +60,12 @@
 
 + [Programming with dplyr: Part 03 strings](http://data-se.netlify.com/2017/08/09/dplyr_strings/)
 
+<br>
+
+## Predictive analytics
+
++ [Little Miss Data predictive analytics tutorial (1 of 4)](https://www.littlemissdata.com/blog/predictive-analytics-tutorial-part-1)
+
 
 
 <br>
