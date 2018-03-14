@@ -37,6 +37,8 @@
 
 ## Packages
 
+
+
 + [Functions from my personal package](http://www.dandersondata.com/post/sharing-some-functions-from-my-personal-r-package/)
 
 + [Internal packages for common data manipulations](http://jonthegeek.com/2018/02/19/internal-packages-for-common-data-manipulations/)
@@ -59,6 +61,8 @@
 + [Programming with dplyr: Part 02, writing a function](http://data-se.netlify.com/2017/07/06/prop_fav/)
 
 + [Programming with dplyr: Part 03 strings](http://data-se.netlify.com/2017/08/09/dplyr_strings/)
+
++ [Standard Non-Standard Evaluation: Tidy Eval](http://timmastny.rbind.io/blog/nse-tidy-eval-dplyr-leadr/)
 
 <br>
 
