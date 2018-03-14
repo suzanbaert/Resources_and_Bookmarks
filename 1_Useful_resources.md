@@ -72,6 +72,8 @@ Collection of blogs and tutorials - published weekly:
 
 + [Compilation of ggplot color palettes](https://github.com/EmilHvitfeldt/r-color-palettes)
 
++ [Geofacet plots](http://ryanhafen.com/blog/geofacet)
+
 
 
 <br>
