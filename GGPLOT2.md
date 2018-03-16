@@ -68,3 +68,15 @@ plot +
 stat_summary(fun.y = mean, geom = "point", fill= "red") +
 stat_summary(fun.data = mean_sdl, mult = 1, geom = "errorbar", width = 0.2, col = "red")
 ```
+
+
+<br><hr><br>
+
+## Color scales
+
+#### Viridis example
+
+palette4 <- viridisLite::viridis(4, option="viridis")
+ggplot(data) +
+  geom_col(aes(x, y, fill), position = position_stack(reverse = TRUE)) + 
+  scale_fill_manual(values=palette4)
