@@ -165,6 +165,12 @@ Collection of blogs and tutorials - published weekly:
 
 <br>
 
+### Webscarping
+
++ [Scraping Javascript websites in R](http://blog.brooke.science/posts/scraping-javascript-websites-in-r/)
+
+<br>
+
 
 ### R Markdown/Markdown
 
