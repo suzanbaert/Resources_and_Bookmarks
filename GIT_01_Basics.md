@@ -89,7 +89,7 @@ Different ways to **add** elements to the staging area:
 + `git add filename.ext` will only stage the specific file  
 + `git add *.R` will stage all .R files  
 + `git add data/` will add the data folder and its contents
-+ `git add .` stages all new and modified files, but does remove any deleted files  
++ `git add .` stages all new and modified files, but does not remove any deleted files  
 + `git add -u` stages all modified and deleted files, but does not stage any new (and therefore untracked) files  
 + `git add -A` stages all new, modified and deleted
 
