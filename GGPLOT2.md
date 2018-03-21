@@ -70,6 +70,14 @@ stat_summary(fun.data = mean_sdl, mult = 1, geom = "errorbar", width = 0.2, col 
 ```
 
 
+## Logarithmic scale
+
+Options:
+
++ `scale_y_log10()`: transforms the full scale
++ `coord_trans(y = "log10")`: transforms the coordinates
+
+
 <br><hr><br>
 
 ## Color scales
