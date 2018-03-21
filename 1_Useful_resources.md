@@ -54,6 +54,8 @@ Collection of blogs and tutorials - published weekly:
 
 
 
+
+
 <br><hr>
 
 ## Selected Blog Posts
@@ -98,6 +100,8 @@ Collection of blogs and tutorials - published weekly:
 + [Purrr tutorial by Jenny Bryan](https://jennybc.github.io/purrr-tutorial/)
 
 + [Purrr tutorial by Charlotte Wickham](https://github.com/cwickham/purrr-tutorial)
+
++ [Purrr into for RLadies by Jennifer Thompson](https://github.com/jenniferthompson/RLadiesIntroToPurrr)
 
 + [Crazy thing called purrr](http://colinfay.me/purrr-web-mining/) - first one in a series of six
 
