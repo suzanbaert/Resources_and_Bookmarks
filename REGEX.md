@@ -81,7 +81,7 @@ Extra notes:
 To quantify a single character: just add afterwards  
 To quantify a group of characters: add between brackets ()
 
-Note: R applies *greedy quantification* and tries to match the longest sequence possible. To revert and have the shortest sequence possible, add `?` after the quantifier. Example: `pattern="A.+A?"`
+Note: R applies *greedy quantification* and tries to match the longest sequence possible. To revert and have the shortest sequence possible, add `?` after the quantifier. Example: `pattern="A.+?A"`
 
 
 
