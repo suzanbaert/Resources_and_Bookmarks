@@ -124,6 +124,8 @@ Collection of blogs and tutorials - published weekly:
 
 + [Inference mind map](https://coggle.it/diagram/Vxlydu1akQFeqo6-/t/inference)
 
++ [A titanic kaggle solve using caret and tidy-tools](https://rsangole.netlify.com/project/yet-another-titanic-solve/)
+
 
 
 <br>
