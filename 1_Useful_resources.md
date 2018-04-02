@@ -62,6 +62,8 @@ Collection of blogs and tutorials - published weekly:
 
 ### Plots
 
++ [Visual vocabulary](https://github.com/ft-interactive/chart-doctor/tree/master/visual-vocabulary)
+
 + [Beautiful highlight plots](https://yutani.rbind.io/post/2017-10-06-gghighlight/)
 
 + [Other way to do highlight plots](https://drsimonj.svbtle.com/plotting-background-data-for-groups-with-ggplot2)
