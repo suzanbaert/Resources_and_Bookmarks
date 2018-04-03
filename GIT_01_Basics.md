@@ -69,7 +69,7 @@ Basic workflow:
 + `git add` to add from your working directory to your staging area
 + `git commit` to add the files to your local GIT
 + `git push` to add the files to your remote GIT  
-
+e
 ```
 -- Add all the files to the staging area
 $ git add -A
@@ -93,7 +93,7 @@ Different ways to **add** elements to the staging area:
 + `git add -u` stages all modified and deleted files, but does not stage any new (and therefore untracked) files  
 + `git add -A` stages all new, modified and deleted
 
-Cleaning up your working directory:
+**Cleaning up your working directory:**
 + `git clean -n`: dry run, shows all files that will be deleted
 + `git clean -df`: removes all untracked files/folders
 
@@ -102,11 +102,11 @@ Note on adding files to the remote:
 + When it is your first push from a repo, you will first have to make the link between the local and remote repository via: `git push  --set-upstream origin master`, or shorter `git push -u origin master`. As of then, `git push` will refer to the upstream branch you've set: i.e. origin/master.
 
 
-Gitignore:  
+**Gitignore:**  
 Add a file `.gitignore` which lists all files that should be ignored by GIT. To add files to `.gitignore` within the command line:
 
 + `touch .gitignore`: will create a .gitignore file
-+ `echo *.Rproj > .gitignore`: create and add R projct file to ignore
++ `echo *.Rproj > .gitignore`: create and add R project file to ignore
 
 
 <br>
