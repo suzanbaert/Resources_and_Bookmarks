@@ -19,8 +19,8 @@ df %>%
 #### Facet wrap plot
 Discovered two nifty functions from [David Robinson's personal package](https://github.com/dgrtwo/drlib) to make ordered faceted plots with words that appear multiple times.  
 
-The two functions:
-```
+
+```The two functions:
 library(tidytext)
 library(ggplot2)
 
@@ -83,8 +83,9 @@ Options:
 ## Color scales
 
 #### Viridis example
-
+```
 palette4 <- viridisLite::viridis(4, option="viridis")
 ggplot(data) +
   geom_col(aes(x, y, fill), position = position_stack(reverse = TRUE)) + 
   scale_fill_manual(values=palette4)
+```
