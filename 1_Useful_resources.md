@@ -78,6 +78,8 @@ Collection of blogs and tutorials - published weekly:
 
 + [Geofacet plots](http://ryanhafen.com/blog/geofacet)
 
++ [Take a sad plot and make it better](https://github.com/apreshill/ohsu-biodatavis)
+
 
 
 <br>
