@@ -10,7 +10,7 @@ To quickly check the number of clusters (from DC [course](https://campus.datacam
 wss <- 0
 
 # Look over 1 to 15 possible clusters
-for (i in 15) {
+for (i in 1:15) {
   # Fit the model: km.out
   km.out <- kmeans(data_matrix, centers = i, nstart = 20, iter.max = 50)
   # Save the within cluster sum of squares
