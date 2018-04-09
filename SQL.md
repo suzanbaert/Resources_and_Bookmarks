@@ -204,3 +204,5 @@ WHERE ____;
 + [SQL Zoo](http://sqlzoo.net)
 
 + [Data.World Basic to Advanced](https://docs.data.world/documentation/sql/concepts/basic/intro.html)
+
++ [SQL cheat sheet](http://www.sqltutorial.org/sql-cheat-sheet/)
