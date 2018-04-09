@@ -86,7 +86,7 @@ Collection of blogs and tutorials - published weekly:
 
 ### Dplyr advanced
 
-+ [Dplyr Data Wrangling Part 1: Basic to Advanced Ways to Select Columns](https://suzan.rbind.io/2018/01/dplyr-tutorial-1/)
++ [Dplyr Data Wrangling Part 1: Basic to Advanced Ways to Select Columns](https://suzan.rbind.io/2018/02/dplyr-tutorial-1/)
 
 + [Dplyr Data Wrangling Part 2: Mutating your columns into the right shape](https://suzan.rbind.io/2018/02/dplyr-tutorial-2/)
 

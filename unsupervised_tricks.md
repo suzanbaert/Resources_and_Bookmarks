@@ -57,7 +57,8 @@ cutree(hclust_output, k=3)
 
 + PCA: `prcomp(data, scale = TRUE, center = TRUE/FALSE)`.
 + Plotting: biplot(PCA_output)
-+ Checking number of PCs necessary:
++ New loadings of first 6 components: `PCA_output$x[, 1:6]`
++ Checking number of PCs necessary: `summary(PCA_output)` or scree plot:
 
 ```
 # Variability of each principal component: pr.var

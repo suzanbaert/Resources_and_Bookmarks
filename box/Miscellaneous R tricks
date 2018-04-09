@@ -1,0 +1,7 @@
+# Miscellaneous R tricks
+
+
+Setting **rownames** from id column in table
+```
+row.names(df) <- df$id
+```
