@@ -86,11 +86,13 @@ Collection of blogs and tutorials - published weekly:
 
 ### Dplyr advanced
 
-+ [Dplyr Data Wrangling Part 1: Basic to Advanced Ways to Select Columns](https://suzan.rbind.io/2018/02/dplyr-tutorial-1/)
++ [Dplyr Data Wrangling Part 1: Basic to Advanced Ways to Select Columns](https://suzan.rbind.io/2018/01/dplyr-tutorial-1/)
 
 + [Dplyr Data Wrangling Part 2: Mutating your columns into the right shape](https://suzan.rbind.io/2018/02/dplyr-tutorial-2/)
 
 + [Dplyr Data Wrangling Part 3: Basic and more advanced ways to filter rows](https://suzan.rbind.io/2018/02/dplyr-tutorial-3/)
+
++ [Dplyr Data Wrangling Part 4: Summarizing and slicing your data](https://suzan.rbind.io/2018/04/dplyr-tutorial-4/)
 
 + [Programming with dplyr](http://dplyr.tidyverse.org/articles/programming.html) - including the `!!` bang bang operator
 
@@ -164,6 +166,8 @@ Collection of blogs and tutorials - published weekly:
 
 + [Tidy Eval in Advanced R Book](https://adv-r.hadley.nz/meta.html) - Chapters 18-21
 
++ [Tidy Eval: How do I make my own dplyr-style functions?](https://thisisnic.github.io/2018/04/16/how-do-i-make-my-own-dplyr-esque-functions/)
+
 
 <br>
 
@@ -195,6 +199,12 @@ Collection of blogs and tutorials - published weekly:
 ### Blogdown
 + [Hugo shortcodes](https://github.com/rstudio/blogdown/issues/40)
 
+
+<br>
+
+### Shiny
+
++ [A Shiny App to Visualize and Share My Dogs’ Medical History](https://www.jennadallen.com/post/a-shiny-app-to-visualize-and-share-my-dogs-medical-history/)
 
 <br>
 
