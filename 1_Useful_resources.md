@@ -181,6 +181,8 @@ Collection of blogs and tutorials - published weekly:
 
 ### Webscraping
 
++ [Scraping javascript rendered sites](https://www.r-bloggers.com/web-scraping-javascript-rendered-sites/)
+
 + [Scraping Javascript websites in R](http://blog.brooke.science/posts/scraping-javascript-websites-in-r/)
 
 <br>
