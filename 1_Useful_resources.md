@@ -115,6 +115,8 @@ Collection of blogs and tutorials - published weekly:
 
 + [Purrr Intro by Emorie Beck](https://emoriebeck.github.io/R-tutorials/)
 
++ [How to write a purrr-like adverb](http://colinfay.me/purrr-adverb-tidyverse/)
+
 
 
 <br>
