@@ -127,6 +127,15 @@ FROM table1
 JOIN table2 ON table1.id = table2.id;
 ```
 
+OR
+
+```SQL
+SELECT *
+FROM table1, table2
+WHERE table1.id = table2.id;
+```
+
+
 If the id column is the same in both tables it can be shorter: `JOIN table2 USING id`.
 Sometimes useful to add aliases after the tables.
 
