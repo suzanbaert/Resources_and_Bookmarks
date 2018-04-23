@@ -1,5 +1,11 @@
 # Miscellaneous R tricks
 
+Pasting a variable inside a line: paste0, or `sprintf()`
+```
+#inserts id behind link
+sprintf("http://www.presidency.ucsb.edu/ws/index.php?pid=%s", id)
+```
+
 
 Setting **rownames** from id column in table
 ```
