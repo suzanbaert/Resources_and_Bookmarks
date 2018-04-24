@@ -148,6 +148,8 @@ Collection of blogs and tutorials - published weekly:
 
 + [Hillary Parker - Making packages from scratch](https://hilaryparker.com/2014/04/29/writing-an-r-package-from-scratch/)
 
++ [Package good practices](http://mangothecat.github.io/goodpractice/index.html)
+
 
 
 <br>
