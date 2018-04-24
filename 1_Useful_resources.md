@@ -154,6 +154,8 @@ Collection of blogs and tutorials - published weekly:
 
 + [R package primer](http://kbroman.org/pkg_primer/)
 
++ [Ropensci packages guide](https://github.com/ropensci/onboarding/blob/master/packaging_guide.md)
+
 
 
 <br>
