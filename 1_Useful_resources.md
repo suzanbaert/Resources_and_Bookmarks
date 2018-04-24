@@ -150,6 +150,8 @@ Collection of blogs and tutorials - published weekly:
 
 + [Package good practices](http://mangothecat.github.io/goodpractice/index.html)
 
++ [Making your first R package](http://tinyheero.github.io/jekyll/update/2015/07/26/making-your-first-R-package.html)
+
 
 
 <br>
