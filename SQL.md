@@ -29,10 +29,10 @@ WHERE var1 < (SELECT var1 FROM table WHERE var2 = value2);
 
 ## Select clauses
 `SELECT *`: Select everything.  
-`SELECT DISTINCT var1`: Return the distinctive values of var1
-`SELECT ROUND(var1, -3)`: Round the var1 to the nearest 1000 unit  
-`SELECT var1/1000`: Immediate calculations inside select
-`SELECT CONCAT(var1, '%')`: Concatenating text together  
+`SELECT DISTINCT var1`: Return the distinctive values of var1  
+`SELECT ROUND(var1, -3)`: Round the var1 to the nearest 1000 unit    
+`SELECT var1/1000`: Immediate calculations inside select  
+`SELECT CONCAT(var1, '%')`: Concatenating text together    
 `SELECT COALESCE(var, alternative)`: Takes the first value that is not NULL. If var is not NULL, var will be returned, otherwise the alternative. Function takes as many arguments as needed.
 
 
@@ -40,7 +40,7 @@ Aggregates:
 `SELECT SUM(var)`: returns sum  
 `SELECT AVG(var)`: returns average  
 `SELECT MAX(var)`: returns maximum, similarly there is `MIN`   
-`SELECT COUNT(var)`: Return the number of values
+`SELECT COUNT(var)`: Return the number of values  
 `SELECT LENGTH(var)`: number of characters in a variable  
 
 
@@ -63,7 +63,7 @@ SELECT var 1,
 
 Limiting:  
 `SELECT TOP 10 *`: selects the first   
-Alternative in some SQL dialects: `SELECT * FROM table LIMIT 10;`  
+Alternative in some SQL dialects: `SELECT * FROM table ORDER BY ... DESC LIMIT 10;`  
 
 <br>
 
