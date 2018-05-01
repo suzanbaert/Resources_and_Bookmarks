@@ -187,6 +187,12 @@ Collection of blogs and tutorials - published weekly:
 
 + [Atlassian GIT tutorials](https://www.atlassian.com/git/tutorials/git-stash)
 
+<br>
+
+### Databases
+
++ [Setting up a database connection](https://www.stat.berkeley.edu/~nolan/stat133/Fall05/lectures/SQL-R.pdf)
+
 
 
 <br>
