@@ -189,7 +189,14 @@ Resetting to 300 minutes ago:
 Getting rid of remote branch that no longer exists:  
 `$ git remote prune origin`
 
+
+
+Always use `git push --force-with-lease` rather than `git push -f`. The former will fail if there are upstream changes you have not pulled, the latter will overwrite them. ([Jim Hester's advice](https://twitter.com/jimhester_/status/991288807076122625))
+
+
 <br><hr>
+
+
 
 ## Resources
 
