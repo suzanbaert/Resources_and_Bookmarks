@@ -30,6 +30,8 @@
 
 + [Making many added variable plots with purrr and ggplot2 ](https://aosmith.rbind.io/2018/01/31/added-variable-plots/)
 
++ [Marathon files](https://github.com/kruse-alex/marathon)
+
 
 
 
