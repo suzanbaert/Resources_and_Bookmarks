@@ -27,7 +27,6 @@
 + `HEAD^1` is the same as `HEAD^` and `HEAD~1` and is the parent commit of HEAD, i.e. the last but one commit on this branch.
 
 <br><hr>
-
 ## Initializing your repository set up
 
 ### Starting a completely new project
@@ -71,7 +70,8 @@ Basic workflow:
 + `git add` to add from your working directory to your staging area
 + `git commit` to add the files to your local GIT
 + `git push` to add the files to your remote GIT  
-e
+
+
 ```
 -- Add all the files to the staging area
 $ git add -A
