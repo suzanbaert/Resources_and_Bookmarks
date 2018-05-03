@@ -1,4 +1,4 @@
-+# GIT Basics
+ # GIT Basics
 
 **Contents:**
 
@@ -32,10 +32,12 @@
 
 ### Starting a completely new project
 Step 1: Make a new repository on github and grab the link from the clone with SSH option.
+
 Step 2: Make a new project in R studio with Git control and copy the link.
 
 ### An existing project on your PC that is not yet tracked by Git
 First make a remote repository on Github and grab the link from the clone with SSH option.
+
 Browse through the right folder in the command line, or browse in your normal explorer to the right folder and right click “Git Bash here”:
 
 ```
