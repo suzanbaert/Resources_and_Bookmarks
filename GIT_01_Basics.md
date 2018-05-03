@@ -1,4 +1,4 @@
-# GIT Basics
++# GIT Basics
 
 **Contents:**
 
@@ -22,7 +22,7 @@
 
 + `master^1` is a synonym for `master^` and `master~1` and refers to the parent commit of master. In other words: this is the last but one commit. You can keep counting back this way.
 
- `HEAD`: reference to the last commit of the branch you are currently on. If you are on the master branch, then HEAD and master will refer to the same commit.
++ `HEAD`: reference to the last commit of the branch you are currently on. If you are on the master branch, then HEAD and master will refer to the same commit.
 
 + `HEAD^1` is the same as `HEAD^` and `HEAD~1` and is the parent commit of HEAD, i.e. the last but one commit on this branch.
 
