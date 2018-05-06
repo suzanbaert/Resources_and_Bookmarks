@@ -27,5 +27,3 @@ Notes of things I always forget, or fixes for the struggles I've had...
 + [GIT notes Part 1 - Getting the basics](GIT_01_Basics.md)
 
 + [GIT notes Part 2 - Fixing when things go wrong](GIT_02_Fixing_screwups.md)
-
-+ [Parsing to JSON in R](JSON_02_JSON_in_R.md)
