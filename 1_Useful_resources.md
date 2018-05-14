@@ -156,6 +156,8 @@ Collection of blogs and tutorials - published weekly:
 
 + [Ropensci packages guide](https://github.com/ropensci/onboarding/blob/master/packaging_guide.md)
 
++ [Colin Fay's one day workshop at ERUM](https://github.com/ColinFay/erum2018)
+
 
 
 <br>
