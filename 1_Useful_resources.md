@@ -22,6 +22,8 @@ With this page I intend to keep track of some useful tutorials or blogposts.
 
 + Advanced R: [Advanced R, by Hadley Wickham](http://adv-r.had.co.nz/)
 
++ Advanced R course: (https://privefl.github.io/advr38book/)
+
 + GIT: [Git in practice, by Mike McQuaid](https://github.com/GitInPractice/GitInPractice#readme)
 
 + GIT: [Happy with GIT for R, by Jenny Bryan](http://happygitwithr.com/)
