@@ -89,3 +89,15 @@ ggplot(data) +
   geom_col(aes(x, y, fill), position = position_stack(reverse = TRUE)) + 
   scale_fill_manual(values=palette4)
 ```
+
+
+
+<br><hr><br>
+
+## Ridgeline plots
+
+
+```
+ggplot(akl_daily, aes(x = max_temp, y = month, height = ..density..)) +
+  geom_density_ridges(stat = "density")
+```
