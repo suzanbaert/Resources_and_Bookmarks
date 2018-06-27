@@ -89,6 +89,8 @@ Collection of blogs and tutorials - published weekly:
 
 + [Take a sad plot and make it better](https://github.com/apreshill/ohsu-biodatavis)
 
++ [Annotations](https://rud.is/b/2016/03/16/supreme-annotations/)
+
 
 
 <br>
