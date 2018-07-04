@@ -1,13 +1,20 @@
-# Unsupervised learning
+# Unsupervised learning: Clustering
 
 **Goal:** finding homogeneous groups in the data, measured by distance within observations.
 
 **Types of data:**
-+ Numeric: euclidean distance, in R: dist()
-+ Binary: 1 - Jaccard index, in R: dist(x, method = "binary")
-+ Categorical: change to set of binary variables, in R: dummies::dummy.data.frame(x), then binary dist.
++ Numeric: euclidean distance, in R: `dist()`
++ Binary: 1 - Jaccard index, in R: `dist(x, method = "binary")`
++ Categorical: change to set of binary variables, in R: `dummies::dummy.data.frame(x)`, then binary dist.
+
+**Data cleanup**  
+Not always required. `colMeans(x)` can be used for a quick check of means, `apply(x, 2, sd)` for standard deviations
+
++ Standardization: scale all data until mean = 0, sd = 1. In R: `scale()`
++ Normalization: all observations on a vector from 0 to 1. In R: `(x - min(x) / max(x) - min(x))`
 
 
+<br><hr>
 
 ### 1. Kmeans
 
@@ -26,7 +33,7 @@ plot(data, col = model$cluster)
 
 ```
 
-
+<br>
 
 **Choosing the number of clusters:**
 Either based on context/business requirements or empirically from the data.
@@ -95,8 +102,32 @@ silhouette_clusters <- function(data, kmax = 10) {
 }
 ```
 
+<br>
+<hr>
 
 
+### 2. Hierarchical clustering
 
+**Principle:**
++ Each observation starts in its own cluster
++ Join the two closest clusters based on distance
++ Repeat until 1 cluster left
+
+Measuring distance:
++ Complete linkage: join based on maximum distance (farthest neighbour)
++ Single linkage: join based on minimum distance (nearest neighbour) (not recommended, leads often to unbalanced trees)
++ Average linkage: join based on average distance
+
+![](https://image.slidesharecdn.com/clusteranalysis-091117015845-phpapp01/95/cluster-analysis-7-728.jpg)
+
+```
+dist_data <- dist(data[-1])  #if column one contains label
+model <- hclust(dist_data, method = "complete")
+
+plot(model)
+abline(h = 10, col = "red")
+
+data$cluster <- cutree(model, k = 5)  #measured in number of clusters
+data$cluster <- cutree(model, h = 10)  #measured in height (distance)
 
 ```
