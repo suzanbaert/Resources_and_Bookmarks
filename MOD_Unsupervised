@@ -1,0 +1,70 @@
+# Unsupervised learning
+
+**Goal:** finding homogeneous groups in the data, measured by distance within observations.
+
+**Types of data:**
++ Numeric: euclidean distance, in R: dist()
++ Binary: 1 - Jaccard index, in R: dist(x, method = "binary")
++ Categorical: change to set of binary variables, in R: dummies::dummy.data.frame(x), then binary dist.
+
+
+
+### 1. Kmeans
+
+**Principle:**
++ Randomly assign k centroids
++ Assign each observation to the closest centroid
++ Recalculate centroid as the middle of the current cluster
++ Repeat until no observation changes cluster
++ Run the whole model multiple times to get the best model, set seed for reproducibility
++ The best model has the lowest total within cluster sum of squares (square of the distance of all observations to their center)
+
+```
+model <- kmeans(data, centers = 3, nstart = 10)
+data$cluster <- model$clusters
+plot(data, col = model$cluster)
+
+```
+
+
+
+**Choosing the number of clusters:**
+Either based on context/business requirements or empirically from the data.
+
+*Elbow plot*
+Executing kmeans with different centers to understand the link of number of clusters to total within cluster SS.
+```
+#elbow plot
+wss <- 0
+for (i in 1:10) {
+  kmeans_output <- kmeans(mean_agg_data[-1], centers=i, nstart=10)
+  wss[i] <- kmeans_output$tot.withinss
+}
+plot(1:10, wss, type = "b")
+```
+
+
+*Silhouette analysis*
+Can serve as model performance check, plus help decide on the number of clusters.
+Silhouette width: how similar is this observation to its cluster versus all other clusters. If 0, on the border. If clsoe to 1, well matched with the cluster. If close to -1, would fit better with neighbouring cluster.
+Silhouette width Si = (bi - ai) / max(bi, ai), with ai: average distance from observation i to all observations within its clusters, and bi: average distance to all observations in the nearest cluster.
+
+```
+model <- cluster::pam(data, k = 3)
+model$silinfo$widths    #how well matched with the clusters
+model$silinfo$avg.width   #effectiveness of the clustering in general
+
+plot(silhouette(model))
+```
+
+
+To help decide on number of clusters:
+```
+#silhouette choice of clusters
+silwidth <- 0
+for (i in 2:10) {
+  silh_output <- cluster::pam(mean_agg_data[-1], k=i)
+  silwidth[i] <- silh_output$silinfo$avg.width
+}
+plot(1:10, silwidth, type = "b" )
+```
