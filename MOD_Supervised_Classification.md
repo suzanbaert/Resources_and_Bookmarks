@@ -121,3 +121,38 @@ nullmodel <- glm(y ~ 1, data = df, family = "binomial")
 fullmodel <- glm(y ~ ., data = df, family = "binomial")
 stepmodel <- step(nullmodel, scope = list(lower = nullmodel, upper = fullmodel), direction = "forward")
 ```
+
+
+
+<br><hr>
+
+
+
+### 4. Decision (classification) trees
+
+**How does it work**
+
++ Creates a set of ifelse decisions to divide the general set into partitions with the most homogeneous outcome.
++ Issue: diagonal splits are not possible, so tree can get complex very quickly
++ Tree can be prepruned to decide a depth level, or minimum number of observations at a node
++ Tree can be postpruned as well
+
+
+
+**In R:**
+
+```
+library(rpart)
+model <- rpart(y ~ ., data = df, method = "class")
+model <- rpart(y ~ ., data = df, method = "class", control = rpart.control(maxdepth = __, minsplit = ___)) #prepruned
+
+predict(model, testdata, type = "class")
+
+#visualization
+library(rpart.plot)
+rpart.plot(model)
+
+#postpruning
+plotcp(model) #plot error rate vs complexity
+model_pruned <- prune(model, cp = 0.2)
+```
