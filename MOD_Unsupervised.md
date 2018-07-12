@@ -52,8 +52,8 @@ plot(1:10, wss, type = "b")
 
 
 *Silhouette analysis*
-Can serve as model performance check, plus help decide on the number of clusters.
-Silhouette width: how similar is this observation to its cluster versus all other clusters. If 0, on the border. If clsoe to 1, well matched with the cluster. If close to -1, would fit better with neighbouring cluster.
+Can serve as model performance check, plus help decide on the number of clusters.  
+Silhouette width: how similar is this observation to its cluster versus all other clusters. If 0, on the border. If clsoe to 1, well matched with the cluster. If close to -1, would fit better with neighbouring cluster.  
 Silhouette width Si = (bi - ai) / max(bi, ai), with ai: average distance from observation i to all observations within its clusters, and bi: average distance to all observations in the nearest cluster.
 
 ```
