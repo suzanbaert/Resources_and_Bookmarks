@@ -19,7 +19,7 @@ Not always required. `colMeans(x)` can be used for a quick check of means, `appl
 ### 1. Kmeans
 
 **Principle:**
-+ Randomly assign k centroids
++ Randomly assign to k clusters and calculate k initial centroids
 + Assign each observation to the closest centroid
 + Recalculate centroid as the middle of the current cluster
 + Repeat until no observation changes cluster
@@ -39,7 +39,8 @@ plot(data, col = model$cluster)
 Either based on context/business requirements or empirically from the data.
 
 *Elbow plot*
-Executing kmeans with different centers to understand the link of number of clusters to total within cluster SS.
+Executing kmeans with different centers to understand the link of number of clusters to total within cluster SS. Typically would select at the elbow so you have a set of clusters explaining 'most' of the data and where adding an additional cluster would contribute relatively little. Sometimes there is no clear elbow, which often indicates that the data has no defined clusters.
+
 ```
 #elbow plot
 wss <- 0
@@ -114,9 +115,10 @@ silhouette_clusters <- function(data, kmax = 10) {
 + Repeat until 1 cluster left
 
 Measuring distance:
-+ Complete linkage: join based on maximum distance (farthest neighbour)
++ Complete linkage: join based on maximum distance across all pairs of two clusters (farthest neighbour)
 + Single linkage: join based on minimum distance (nearest neighbour) (not recommended, leads often to unbalanced trees)
 + Average linkage: join based on average distance
++ Ward's method (mininum variance): join based on minimizing within-cluster sum of squares (most similar to kmeans)
 
 ![](https://image.slidesharecdn.com/clusteranalysis-091117015845-phpapp01/95/cluster-analysis-7-728.jpg)
 
@@ -131,3 +133,17 @@ data$cluster <- cutree(model, k = 5)  #measured in number of clusters
 data$cluster <- cutree(model, h = 10)  #measured in height (distance)
 
 ```
+
+
+Versus kmeans:
++ More flexible, more accomdating to non-numeric values
++ More easily interpretable
++ Spots outliers easier
++ But takes significantly longer to run and is therefore only realistic for small datasets
+
+
+<hr><br>
+
+### 3. Model-based clustering
+
+Kmeans and 

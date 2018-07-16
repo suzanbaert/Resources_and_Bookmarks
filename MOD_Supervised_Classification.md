@@ -1,7 +1,6 @@
 # Supervised learning: Classification
 
-**Goal:** training the machine to learn from prior examples, in this case: categorizing new data.
-
+**Goal:** training the machine to learn from prior examples. If numeric, it's regression. If binary/categorical: classification.
 
 <br><hr>
 
@@ -126,16 +125,16 @@ model <- naivebayes::naive_bayes(y ~ x, data = df, laplace = 1)
 
 
 
-### 4. Decision (classification) trees
+### 4. Decision tree
 
 **How does it work**
 
 + Creates a set of ifelse decisions to divide the general set into partitions with the most homogeneous outcome ("purity").
 + Tree can be prepruned to decide a depth level, or minimum number of observations at a node
 + Tree can be postpruned as well
-+ Measure: accuracy, confusion matrix,
++ Measure: accuracy, confusion matrix (caret::confusionMatrix), auc
 
-Advantages: ease of use, model interpretability and fast.
+Advantages: ease of use (no data prep), model interpretability and fast.
 Disadvantages: issue to overfit, single tree can have high variance
 
 **Data preparation**
@@ -147,13 +146,15 @@ Disadvantages: issue to overfit, single tree can have high variance
 
 **In R:**
 
+Use package rpart, which stands for recursive partitioning - the process used to train decision trees
+
 ```
 library(rpart)
 model <- rpart(y ~ ., data = df, method = "class")
 model <- rpart(y ~ ., data = df, method = "class", control = rpart.control(maxdepth = __, minsplit = ___)) #prepruned
 
 predict(model, testdata, type = "class") #output classification
-predict(model, testdata, type = "prob") #output probability for each class
+predict(model, testdata, type = "prob") #output probability for each class, which is needed for auc
 
 #visualization
 library(rpart.plot)
@@ -161,7 +162,8 @@ rpart.plot(model)
 
 #postpruning
 plotcp(model) #plot error rate vs complexity
-model_pruned <- prune(model, cp = 0.2)
+opt_cp_index <- which.min(model$cptable[ , "xerror"]) #find index of lowest xerror in cptable
+model_pruned <- prune(model, cp = model$cptable[opt_cp_index, "CP"])
 ```
 
 Can add different decision criteria and then compare the classification error (lower is better obviously)
@@ -174,5 +176,12 @@ pred2 <- predict(object = model2, newdata = testdf, type = "class")
 
 ce(actual = df$y, predicted = pred1)
 ce(actual = df$y, predicted = pred2)  
+
+```
+
+Or use auc to compare versus other models:
+```
+pred_for_auc <- predict(model, testdata, type = "prob")
+Metrics::auc(actual = testset$y, predicted <- pred_for_auc[ , 2]) #predicted values needs yes column
 
 ```
