@@ -31,6 +31,8 @@ With this page I intend to keep track of some useful tutorials or blogposts.
 
 + GIT: [Happy with GIT for R, by Jenny Bryan](http://happygitwithr.com/)
 
++ [R markdown](https://bookdown.org/yihui/rmarkdown/)
+
 + Blogdown: [Creating Websites with R Markdown, by Yihui Xie et al.](https://bookdown.org/yihui/blogdown/)
 
 + Bookdown: [Authoring Books and Technical Documents with R Markdown, by Yihui Xie](https://bookdown.org/yihui/bookdown/)
