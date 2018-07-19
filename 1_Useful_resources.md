@@ -151,6 +151,8 @@ Collection of blogs and tutorials - published weekly:
 
 <br>
 
+
+
 ### Making packages
 
 + [Maelle Salmon's how To make good packages](http://www.masalmon.eu/2017/12/11/goodrpackages/)
@@ -179,6 +181,7 @@ Collection of blogs and tutorials - published weekly:
 
 + [Larie's getting started with xaringan](https://aczane.netlify.com/2018/03/02/i-m-not-a-ninja-but-i-ve-got-some-slides/)
 
++ [Xaringan wiki](https://github.com/yihui/xaringan/wiki)
 
 <br>
 
