@@ -1,4 +1,3 @@
-
 # Useful links
 
 With this page I intend to keep track of some useful tutorials or blogposts.
@@ -8,6 +7,8 @@ With this page I intend to keep track of some useful tutorials or blogposts.
 + Starter guides: [R for data science by Hadley Wickham and Garrett Grolemund](http://r4ds.had.co.nz/)
 
 + Starter guides:[Modern Dive, by Chester Ismay and Albert Y. Kim](http://moderndive.com/)
+
++ Starter guides: [Learning statistics with R by Danielle Navarro](http://compcogscisydney.org/learning-statistics-with-r/)
 
 + Starter guides: [Data Analysis and Visualization Using R, by David Robinson](http://varianceexplained.org/RData/)
 
