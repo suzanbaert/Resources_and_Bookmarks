@@ -43,7 +43,8 @@ Options:
 #### Generals:  
 + `.`: any character except newline
 + `|`: or character
-+ `^`: stat of the string
++ `.*test`: everything up to (and including) the characters "test".
++ `^`: start of the string
 + `$`: end of the string
 
 
