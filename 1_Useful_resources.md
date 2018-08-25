@@ -16,6 +16,8 @@ With this page I intend to keep track of some useful tutorials or blogposts.
 
 + Data Viz: [Fundamentals of Data Visualization, by Claus O. Wilke (in progress)](http://serialmentor.com/dataviz/)
 
++ Data viz: [Plotly for R](http://plotly-book.cpsievert.me/)
+
 + Text Analytics: [Tidy Text Mining, by Julia Silge and David Robinson](https://www.tidytextmining.com/)
 
 + Twitter data: [21 Recipes for Mining Twitter Data with rtweet](https://rud.is/books/21-recipes/)
