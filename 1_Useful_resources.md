@@ -174,6 +174,8 @@ Collection of blogs and tutorials - published weekly:
 
 + [Colin Fay's one day workshop at ERUM](https://github.com/ColinFay/erum2018)
 
++ [Writing a package from scratch](https://r-mageddon.netlify.com/post/writing-an-r-package-from-scratch/)
+
 
 
 <br>
