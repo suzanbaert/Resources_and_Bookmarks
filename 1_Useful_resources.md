@@ -158,7 +158,7 @@ Collection of blogs and tutorials - published weekly:
 
 ### Making packages
 
-+ [Maëlle Salmon's how To make good packages](http://www.masalmon.eu/2017/12/11/goodrpackages/)
++ [Maëlle Salmon's how To make good packages](https://masalmon.eu/2017/12/11/goodrpackages/)
 
 + [packages for internal data](http://rmhogervorst.nl/cleancode/blog/2016/03/07/create-package-for-dataset.html)
 
