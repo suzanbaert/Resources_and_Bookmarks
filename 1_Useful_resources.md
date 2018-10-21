@@ -158,7 +158,7 @@ Collection of blogs and tutorials - published weekly:
 
 ### Making packages
 
-+ [Maelle Salmon's how To make good packages](http://www.masalmon.eu/2017/12/11/goodrpackages/)
++ [Maëlle Salmon's how To make good packages](https://masalmon.eu/2017/12/11/goodrpackages/)
 
 + [packages for internal data](http://rmhogervorst.nl/cleancode/blog/2016/03/07/create-package-for-dataset.html)
 
@@ -170,7 +170,7 @@ Collection of blogs and tutorials - published weekly:
 
 + [R package primer](http://kbroman.org/pkg_primer/)
 
-+ [Ropensci packages guide](https://github.com/ropensci/onboarding/blob/master/packaging_guide.md)
++ [rOpenSci packages guide](https://ropensci.github.io/dev_guide/)
 
 + [Colin Fay's one day workshop at ERUM](https://github.com/ColinFay/erum2018)
 
