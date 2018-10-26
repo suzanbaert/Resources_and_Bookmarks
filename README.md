@@ -22,7 +22,9 @@ Notes of things I always forget, or fixes for the struggles I've had...
 
 + [Encoding/Regex notes](REGEX.md)
 
-+ [SQL notes](SQL_01_basics.md)
++ [SQL notes](DB_SQL.md)
+
++ [MongoDB](DB_MongoDB.md)
 
 + [GIT notes Part 1 - Getting the basics](GIT_01_Basics.md)
 
