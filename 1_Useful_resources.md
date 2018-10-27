@@ -98,6 +98,10 @@ Collection of blogs and tutorials - published weekly:
 
 
 
+### Spatial
+
++ [Drawing beautiful maps programmatically with R, sf and ggplot2](https://www.r-spatial.org//r/2018/10/25/ggplot2-sf.html)
+
 <br>
 
 ### Dplyr advanced
