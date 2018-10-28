@@ -89,7 +89,6 @@ Functional `:=` operator allows to chain operations without specifyin the left h
 
 ```{r}
 msleepDT[, `:=`(colZ = "Z")(colK = sleep_total/60)(colX = "X")]
-msleepDT
 ```
 
 
