@@ -1,0 +1,136 @@
+---
+title: "data.table package"
+output: md_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+# data.table notes
+```{r}
+library(data.table)
+
+#dataset
+msleepDT <- as.data.table(ggplot2::msleep)
+irisDT <- as.data.table(iris)
+```
+
+
+
+## General syntax
+
+`DT[i, j, by]` - take data.table DT, subset rows i, manipulate columns j by something.
+
+
+## Importing data
+
+
+## Selecting rows
+
++ `msleepDT[1:3, ]`: selecting rows 1-3
++ `msleepDT[1:3]`: selecting rows 1-3
++ `msleepDT[.N]`: selecting the last row. `.N` is a shortcut for `nrow()`
+
+
+Logical subsetting:
++ `msleepDT[sleep_total > 15]`: selecting rows with a column value above 15
++ `msleepDT[vore == "omni"]`: selecting rows with omni vores
++ `msleepDT[vore %in% c("omni", "carni")]`: selecting rows with omni vores
+
+To get to the boolean version: `msleepDT[, sleep_total > 15]`
+
+
+
+
+
+<br>
+
+## Selecting columns:
+
++ `msleepDT[,1 ]`: selecting first column in a data.table
++ `msleepDT[, .(genus, vore)]`: selecting genus and vore columns. `.()` is a shortcut for list
++ `msleepDT[, name]`: returns a vector with all names
++ `msleepDT[, .(name)]`: returns a one column data.table with all names
+
+
+
+<br>
+
+## Calculations in columns
+
++ `msleepDT[, mean(sleep_total)]`: calculating the mean, no column name
++ `msleepDT[, .(mean=mean(sleep_total))]`: calculating the mean and giving a colname
++ `msleepDT[, .(mean=mean(sleep_total), median=median(sleep_total))]`: calculating multiple columns
++ `msleepDT[, .(name, mean=mean(sleep_total), median=median(sleep_total))]`: keeping a column, adding the overall mean and median (value gets recylced)
+
+
+<br>
+
+## Calculations by groups
+
++ `msleepDT[, .(mean=mean(sleep_total)), by=vore]`: calculating the mean by vore.
++ `msleepDT[, .(mean=mean(sleep_total)), by=.(genus,vore)]`: calculating the mean by vore.
+
+
+<br>
+
+## Adding and removing columns
+
+These operations update by reference which means your source table is affected and not limited to these lines of code!
+
+
++ `msleepDT[, colZ := "Z"]`: adding a column with values Z
++ `msleepDT[, colZ := NULL]`: removing column colZ
++ `msleepDT[, c("awake", "awake_s") := .(awake*60, awake*3600)]`: updating a column and adding a second one
+
+
+Functional `:=` operator allows to chain operations without specifyin the left hand side upfront.
+
+```{r}
+msleepDT[, `:=`(colZ = "Z")(colK = sleep_total/60)(colX = "X")]
+msleepDT
+```
+
+
+
+<br>
+
+## Chaining operations
+
+You can chain multiple operations behind each other by bracketing.
+
+```{r}
+msleepDT[, .(mean=mean(sleep_total)), by=vore][order(vore)]
+```
+
+
+<br> 
+
+## Looping through means
+
+If you want to get the mean of multiple columns, there is a more efficient way than to repeat a few times `mean(col)`.
+
++ `.SD`: shortcut that contains all columns, except the ones mentioned in `by`.
++ `.SDcols`: specifies which columns of DT to include in .SD 
+
+```{r}
+irisDT[, lapply(.SD, median), by=Species]
+```
+
+Using .SDcols to specify which ones:
+
+```{r}
+irisDT[, lapply(.SD, median), .SDcols = c("Sepal.Width","Sepal.Length"), by=Species]
+```
+
+
+
+<br>
+
+## Changing and reordering columns
+
++ `setnames(DT, "oldcol", "newcol")`: changing a column name
++ `setnames(DT, tolower(names(DT)))`: all columns to lower case
+
++ `setcolorder(DT, c("col2", "col1")): swaps ordering
