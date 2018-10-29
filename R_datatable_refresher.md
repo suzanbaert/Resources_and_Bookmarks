@@ -3,10 +3,8 @@ data.table notes
 
     library(data.table)
 
-    ## Warning: package 'data.table' was built under R version 3.5.1
-
     #dataset
-    msleepDT <- as.data.table(ggplot2::msleep)
+    msleepDT <- setDT(ggplot2::msleep)
     irisDT <- as.data.table(iris)
 
 General syntax

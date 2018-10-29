@@ -12,7 +12,7 @@ knitr::opts_chunk$set(echo = TRUE)
 library(data.table)
 
 #dataset
-msleepDT <- as.data.table(ggplot2::msleep)
+msleepDT <- setDT(ggplot2::msleep)
 irisDT <- as.data.table(iris)
 ```
 
