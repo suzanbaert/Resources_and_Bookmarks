@@ -95,6 +95,14 @@ Collection of blogs and tutorials - published weekly:
 
 <br>
 
+### data.table
+
++ [advanced data.table](http://brooksandrew.github.io/simpleblog/articles/advanced-data-table/)
+
+
+
+<br>
+
 ### Regex
 
 + [Dynamic regex in R](https://stackoverflow.com/questions/16221899/dynamic-regex-in-r)
