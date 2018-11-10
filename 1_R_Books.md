@@ -12,6 +12,8 @@ With this page I intend to keep track of some useful tutorials or blogposts.
 
 + [Data Analysis and Visualization Using R, by David Robinson](http://varianceexplained.org/RData/)
 
++ [Learning statistics with R, by Danielle Navarro](http://compcogscisydney.org/learning-statistics-with-r/)
+
 
 <br>
 
