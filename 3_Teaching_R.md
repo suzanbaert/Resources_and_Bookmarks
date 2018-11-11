@@ -6,6 +6,8 @@
 
 + [Tidyverse for beginners, by Danielle Navarro](https://slides.com/djnavarro/tidyverse-for-beginners#/)
 
++ [Dplyr first steps, by Omayma](https://speakerdeck.com/omaymas/data-manipulation-with-dplyr-first-steps)
+
 
 
 ## Talks on teaching
